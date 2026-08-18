@@ -6,21 +6,28 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
 
 android {
     namespace 'com.realtouchapp.admitted'
     signingConfigs {
-        debug {
-            storeFile file("${rootDir}/upload.keystore")
-            storePassword '90013701'
-            keyPassword '90013701'
-            keyAlias 'upload'
-        }
-        release {
-            storeFile file("${rootDir}/upload.keystore")
-            storePassword '90013701'
-            keyPassword '90013701'
-            keyAlias 'upload'
+        if (keystorePropertiesFile.exists()) {
+            debug {
+                storeFile rootProject.file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+                keyPassword keystoreProperties['keyPassword']
+                keyAlias keystoreProperties['keyAlias']
+            }
+            release {
+                storeFile rootProject.file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+                keyPassword keystoreProperties['keyPassword']
+                keyAlias keystoreProperties['keyAlias']
+            }
         }
     }
 
@@ -46,7 +53,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            }
             debuggable false
         }
     }

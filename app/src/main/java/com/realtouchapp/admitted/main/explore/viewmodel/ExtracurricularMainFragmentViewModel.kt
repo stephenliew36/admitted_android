@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.room.Room
 import com.google.gson.Gson
+import com.realtouchapp.admitted.R
 import com.realtouchapp.admitted.ext.testPrint
 import com.realtouchapp.admitted.network.api.AdmittedReposritory
 import com.realtouchapp.admitted.network.entity.*
@@ -174,7 +175,7 @@ class ExtracurricularMainFragmentViewModel @Inject constructor(@ApplicationConte
 
     private fun getPlacesFromUrl(lat:String,lng:String,keyword:String): ArrayList<GooglePlaceNearby.Result>? {
         val client = OkHttpClient()
-        val url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=50000&key=AIzaSyAjpEWfpv6Ih7fikSAkxmxFk77vbP8kqds&keyword=${keyword}"
+        val url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=50000&key=${applicationContext.getString(R.string.google_maps_api_key)}&keyword=${keyword}"
 
         val request = Request.Builder()
             .url(url)
@@ -225,7 +226,7 @@ class ExtracurricularMainFragmentViewModel @Inject constructor(@ApplicationConte
     fun getPlacePhone(extracurricular: Extracurricular,method:(GooglePlaceDetail.Result?)->Unit){
         CoroutineScope(Dispatchers.IO).launch {
             val client = OkHttpClient()
-            val url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=${extracurricular.placeId}&key=AIzaSyAjpEWfpv6Ih7fikSAkxmxFk77vbP8kqds"
+            val url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=${extracurricular.placeId}&key=${applicationContext.getString(R.string.google_maps_api_key)}"
 
             val request = Request.Builder()
                 .url(url)

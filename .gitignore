@@ -14,6 +14,8 @@ local.properties
 
 # OAuth / third-party secrets (keep a local copy; see configue.example.xml)
 app/src/main/res/values/configue.xml
+app/google-services.json
+keystore.properties
 
 # Signing keys and store artifacts
 *.keystore

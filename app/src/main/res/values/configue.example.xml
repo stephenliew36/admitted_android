@@ -3,4 +3,5 @@
     <string name="google_web_client_id" translatable="false">YOUR_GOOGLE_WEB_CLIENT_ID.apps.googleusercontent.com</string>
     <string name="google_client_secret" translatable="false">YOUR_GOOGLE_CLIENT_SECRET</string>
     <string name="facebook_app_id" translatable="false">YOUR_FACEBOOK_APP_ID</string>
+    <string name="google_maps_api_key" translatable="false">YOUR_GOOGLE_MAPS_API_KEY</string>
 </resources>

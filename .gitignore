@@ -14,3 +14,9 @@ local.properties
 
 # OAuth / third-party secrets (keep a local copy; see configue.example.xml)
 app/src/main/res/values/configue.xml
+
+# Signing keys and store artifacts
+*.keystore
+*.jks
+*.pepk
+*.aab

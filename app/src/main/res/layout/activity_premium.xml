@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1E9E5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent=".425"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintWidth_percent=".85">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textRalewaybold15spC4F5257"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Upgrade to Premium Plan"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".1"
+            app:layout_constraintWidth_percent=".7" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            style="@style/textRaleway_regular13spC4F5257"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Keep track of your grades,  activities, awards, and calculate your level of readiness."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".25"
+            app:layout_constraintWidth_percent=".7" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/layer_selector_schooladd_checked"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView"
+            app:layout_constraintHorizontal_bias=".65"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/appCompatTextView"
+            app:layout_constraintTop_toTopOf="@+id/appCompatTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            style="@style/textRaleway_regular13spC4F5257"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Get a customized list of your target, reach, and safety schools based on your current performance."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".5"
+            app:layout_constraintWidth_percent=".7" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/layer_selector_schooladd_checked"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView2"
+            app:layout_constraintHorizontal_bias=".65"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/appCompatTextView2"
+            app:layout_constraintTop_toTopOf="@+id/appCompatTextView2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView3"
+            style="@style/textRaleway_regular13spC4F5257"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Receive advice from consulting experts on dorm selection, visa application, and much more."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".7"
+            app:layout_constraintWidth_percent=".7" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/layer_selector_schooladd_checked"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView3"
+            app:layout_constraintHorizontal_bias=".65"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/appCompatTextView3"
+            app:layout_constraintTop_toTopOf="@+id/appCompatTextView3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView10"
+            style="@style/textRaleway_regular13spC4F5257"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Set reminders on important application deadlines for each school."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".9"
+            app:layout_constraintWidth_percent=".7" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/layer_selector_schooladd_checked"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView10"
+            app:layout_constraintHorizontal_bias=".65"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/appCompatTextView10"
+            app:layout_constraintTop_toTopOf="@+id/appCompatTextView10" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClosePremium"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/vd_close"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias=".95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".025" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent=".45"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".95"
+        app:layout_constraintWidth_percent=".85">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/LinearLayoutCompat11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_frame_f2f4f6"
+            app:layout_constraintHeight_percent=".6"
+            app:layout_constraintWidth_percent=".31"
+            app:layout_constraintVertical_bias=".4"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                style="@style/textRaleway_regular13spC4F5257"
+                android:text="$8.99 / Month"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textColor="@color/primary_gray_blue"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                style="@style/textRaleway_regular13spC4F5257"
+                android:text="You will be charged $8.99 after 3 days. Billed monthly"
+                android:gravity="center"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_frame_f2f4f6"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintWidth_percent=".32"
+            app:layout_constraintBottom_toBottomOf="@+id/LinearLayoutCompat11"
+             app:layout_constraintVertical_bias="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                style="@style/textRaleway_regular13spC4F5257"
+                android:text="Most popular"
+                android:background="@drawable/bg_cornner_ecbfa9_top"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#3F5D95"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                style="@style/textRaleway_regular13spC4F5257"
+                android:text="$49.99 / Year"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_corner_3f5d95_bottom"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                style="@style/textRaleway_regular13spC4F5257"
+                android:text="You will be charged $49.99 after 3 days. Billed annually"
+                android:gravity="center"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_frame_f2f4f6"
+            app:layout_constraintHeight_percent=".6"
+            app:layout_constraintWidth_percent=".31"
+            app:layout_constraintVertical_bias=".4"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textSize="18sp"
+                style="@style/textRaleway_regular13spC4F5257"
+                android:text="$19.99 / Quarter"
+
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textColor="@color/primary_gray_blue"
+                style="@style/textRaleway_regular13spC4F5257"
+                android:text="You will be charged $19.99 after 3 days. Billed every 3 months"
+
+                android:gravity="center"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_gray_blue"
+            style="@style/textRaleway10spC4F5257"
+            android:text="Auto-renewable. Cancel anytime in the Play Store"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnUpgradeToPremium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintWidth_percent=".85" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpgradeToPremium"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/selector_btn_default"
+            android:fontFamily="@font/raleway_bold"
+            android:lineSpacingExtra="3sp"
+            android:text="Continue with purchase"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintWidth_percent=".85" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/vd_trophy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias=".875"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".55" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/vd_star"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias=".675"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".525" />
+</androidx.constraintlayout.widget.ConstraintLayout>

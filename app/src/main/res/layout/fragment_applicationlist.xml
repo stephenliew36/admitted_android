@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsl_applicaitonlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/clApplicaitonlistFreeUpgrade"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llFreeVersion"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/free_example_application"
+                android:scaleType="fitStart"
+                />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llPaidVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applicaitonlist_title_safetyschool"
+                    style="@style/textRalewaybold17spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Safety Schools"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_applicaitonlist_title_safetyschool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applicaitonlist_hint_safetyschool"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#4F4F4F"
+                    android:text="Add 3 more Safety Schools to balance your list"
+                    android:layout_margin="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_applicaitonlist_title_safetyschool_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_frame_add_dash"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Add Safety Schools \t＋"
+                    android:padding="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="#BDBDBD"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applicaitonlist_title_targetschool"
+                    style="@style/textRalewaybold17spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Target Schools"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_applicaitonlist_title_targetschool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applicaitonlist_hint_targetschool"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#4F4F4F"
+                    android:text="Add 3 more Target Schools to balance your list"
+                    android:layout_margin="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_applicaitonlist_title_targetschool_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_frame_add_dash"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Add Target Schools \t＋"
+                    android:padding="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="#BDBDBD"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applicaitonlist_title_reachschool"
+                    style="@style/textRalewaybold17spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reach Schools"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_applicaitonlist_title_reachschool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applicaitonlist_hint_reachschool"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#4F4F4F"
+                    android:text="Add 3 more Target Schools to balance your list"
+                    android:layout_margin="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_applicaitonlist_title_reachschool_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_frame_add_dash"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Add Reach Schools \t＋"
+                    android:padding="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="#BDBDBD"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applicaitonlist_title_farreachschool"
+                    style="@style/textRalewaybold17spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Far Reach Schools"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_applicaitonlist_title_farreachschool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applicaitonlist_hint_farreachschool"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#4F4F4F"
+                    android:text="Add 2 more Far Reach Schools to balance your list"
+                    android:layout_margin="10dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_applicaitonlist_title_farreachschool_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_frame_add_dash"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Add Far Reach Schools \t＋"
+                    android:padding="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="#BDBDBD"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="80dp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/clApplicaitonlistFreeUpgrade"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_corner_3f5d95"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".975"
+        android:foreground="?attr/selectableItemBackground"
+        >
+       <androidx.appcompat.widget.AppCompatImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/vd_details"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintHorizontal_bias=".95"
+           />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upgrade to Premium"
+            android:textColor="@android:color/white"
+            style="@style/textRalewaybold15spC4F5257"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintVertical_bias=".2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".55"
+            android:text="Learn about your target, reach, and safety schools"
+            android:textColor="@android:color/white"
+            style="@style/textRaleway15spC4F5257"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias=".525"
+            app:layout_constraintVertical_bias=".7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/vd_aplus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias=".015"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

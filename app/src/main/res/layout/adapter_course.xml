@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="#D6DBE3"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_course_title"
+            style="@style/textRaleway_regular13spC4F5257"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="17sp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_course_track"
+            style="@style/textRaleway10spC4F5257"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_adapter_course_title"
+            android:layout_alignLeft="@+id/tv_adapter_course_title"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_marginTop="15dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_course_score"
+            style="@style/textRalewaybold15spC4F5257"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".915">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_extra_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_extra_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vd_iv_go_back" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_extra_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="Extracurriculars"
+                    android:textColor="#3F5D95" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_title"
+                    style="@style/textRalewaybold17spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#4F4F4F"
+                    android:layout_centerVertical="true"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_extra_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vd_ic_favorite_empty" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_extra_male"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/bg_circle_d9d9d9" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAddress"
+                    style="@style/textPopin13spC7A8899"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    gravity="center_vertical|left"
+                    android:text=""
+                    android:textColor="#4F4F4F" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDistance"
+                style="@style/textRaleway10spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:text=""
+                android:textColor="#4F4F4F" />
+            <androidx.appcompat.widget.AppCompatTextView
+
+                style="@style/textRaleway15spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="Don’t know how to reach out? Here’s what you can say"
+                android:textColor="#4F4F4F" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_frame_add_dash"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    style="@style/textRaleway15spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Subject: Volunteering at [Name of Shelter/Clinic]\nDear [Name or &quot;Volunteer Coordinator&quot;], \nMy name is [Your Name], and I’m a high school student at [Your School Name]. I’m reaching out because I’m passionate about [helping animals, giving back to the community, learning more about animal care, etc.] and would love the opportunity to volunteer at [Name of Shelter/Clinic]. \nI believe my qualities, such as being empathetic, hardworking, and reliable, make me a good fit for supporting your team. I’m happy to help with [specific tasks, e.g., caring for animals, cleaning, organizing, or assisting with events], or anything else where assistance is needed. \nI am available [mention times, e.g., after school, on weekends, during school breaks] and would be excited to contribute in any way I can. Please let me know if you have any volunteer opportunities or forms I should fill out to get started. \nThank you so much for your time and for the important work you do. I look forward to hearing from you! \nSincerely, \n[Your Name] \n[Your Contact Information]"
+                    android:textColor="#BDBDBD" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_extra_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"></androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llCopy"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_corner_3f5d95"
+                android:gravity="center"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/copy"
+                    android:fontFamily="@font/raleway_bold"
+                    android:lineSpacingExtra="3sp"
+                    android:text="Copy"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llContect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/selector_btn_default"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/call_white"
+                    android:fontFamily="@font/raleway_bold"
+                    android:lineSpacingExtra="3sp"
+                    android:text="Contect"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/rl_dialogfragmentadded_ap"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/bg_frame_f2f4f6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_dialogfragmentadded_ap"
+        app:layout_constraintVertical_bias="0">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_dialogfragmentadded_title"
+            style="@style/textRalewaybold17spC4F5257"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_dialogfragmentadded_title" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_dialogfragmentadded_content"
+            style="@style/textRaleway_regular13spC4F5257"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Your score just got higher than ever, keep up the good work!" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ProgressBar
+                android:id="@+id/pb_dialogfragmentadded"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="231dp"
+                android:layout_height="8dp"
+                android:max="110"
+                android:progress="90"
+                android:progressDrawable="@drawable/bg_progressecbfa9" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv__dialogfragmentadded_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="78/100"
+                android:textSize="13sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_dialogfragmentadded_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            >
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dialogfragmentadded_ok"
+            style="@style/textRalewaybold13spC4F5257"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_default"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="OK"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_dialogfragmentadded_ap"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_circle_d6dbe3"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/vd_ic_academics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

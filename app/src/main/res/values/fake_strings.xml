@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_school_sanple">
+        <item>Harvard Universitys</item>
+        <item>Massachusetts Institute of Technologys</item>
+        <item>Stanford Universitys</item>
+        <item>Princeton Universitys</item>
+    </string-array>
+    <string-array name="array_school_fake">
+        <item>Harvard Universitys</item>
+        <item>Massachusetts Institute of Technologys</item>
+        <item>Stanford Universitys</item>
+        <item>Princeton Universitys</item>
+        <item>Columbia Universitys</item>
+        <item>University of Chicagos</item>
+        <item>University of Pennsylvanias</item>
+        <item>Yale Universitys</item>
+        <item>California Institute of Technologys</item>
+        <item>University of California, Berkeleys</item>
+        <item>Cornell Universitys</item>
+        <item>University of Michigan, Ann Arbors</item>
+        <item>Johns Hopkins Universitys</item>
+        <item>Northwestern Universitys</item>
+        <item>University of California, Los Angeless</item>
+        <item>Duke Universitys</item>
+        <item>University of Illinois at Urbana–Champaigns</item>
+        <item>University of Washington - Seattles</item>
+        <item>University of Wisconsin–Madisons</item>
+        <item>New York Universitys</item>
+        <item>University of Texas at Austins</item>
+        <item>University of California, San Diegos</item>
+        <item>University of California, San Franciscos</item>
+        <item>University of North Carolina at Chapel Hills</item>
+        <item>Dartmouth Colleges</item>
+        <item>University of Minnesota - Twin Citiess</item>
+        <item>Washington University in St. Louiss</item>
+        <item>Rockefeller Universitys</item>
+        <item>Rutgers University–New Brunswicks</item>
+        <item>University of Southern Californias</item>
+        <item>University of California, Daviss</item>
+        <item>Vanderbilt Universitys</item>
+        <item>Pennsylvania State Universitys</item>
+        <item>Ohio State Universitys</item>
+        <item>Purdue Universitys</item>
+        <item>University of Texas Southwestern Medical Centers</item>
+        <item>Brown Universitys</item>
+        <item>University of Colorado Boulders</item>
+        <item>University of Virginias</item>
+        <item>University of Pittsburghs</item>
+        <item>Texas A&amp;M University, College Stations</item>
+        <item>University of Maryland, College Parks</item>
+        <item>Georgia Institute of Technologys</item>
+        <item>University of California, Irvines</item>
+        <item>University of Rochesters</item>
+        <item>Carnegie Mellon Universitys</item>
+        <item>University of Floridas</item>
+        <item>University of Arizonas</item>
+        <item>Boston Universitys</item>
+        <item>University of California, Santa Barbaras</item>
+        <item>University of Texas MD Anderson Cancer Centers</item>
+        <item>Indiana University Bloomingtons</item>
+        <item>University of Utahs</item>
+        <item>Emory Universitys</item>
+        <item>Baylor College of Medicines</item>
+        <item>Case Western Reserve Universitys</item>
+        <item>Tufts Universitys</item>
+        <item>University of Iowas</item>
+        <item>Michigan State Universitys</item>
+        <item>Rice Universitys</item>
+        <item>University of Colorado Anschutz Medical Campuss</item>
+        <item>University of Massachusetts Amhersts</item>
+        <item>Iowa State Universitys</item>
+        <item>University of Notre Dames</item>
+        <item>Icahn School of Medicine at Mount Sinais</item>
+        <item>University of Alabama at Birminghams</item>
+        <item>Arizona State Universitys</item>
+        <item>University of Kansass</item>
+        <item>North Carolina State Universitys</item>
+        <item>University of Connecticuts</item>
+        <item>Stony Brook Universitys</item>
+        <item>Brandeis Universitys</item>
+        <item>University of Georgias</item>
+        <item>Yeshiva Universitys</item>
+        <item>The Scripps Research Institutes</item>
+        <item>University of Illinois at Chicagos</item>
+        <item>University of Missouri–Columbias</item>
+        <item>University of Miamis</item>
+        <item>Georgetown Universitys</item>
+        <item>University of Cincinnatis</item>
+        <item>Wake Forest Universitys</item>
+        <item>University of California, Riversides</item>
+        <item>University of Texas Health Science Center at Houstons</item>
+        <item>University of Tennessee, Knoxvilles</item>
+        <item>Virginia Commonwealth Universitys</item>
+        <item>Colorado State Universitys</item>
+        <item>University of Houstons</item>
+        <item>Oregon Health &amp; Science Universitys</item>
+        <item>Oregon State Universitys</item>
+        <item>Virginia Techs</item>
+        <item>Florida State Universitys</item>
+        <item>University of Massachusetts Medical Schools</item>
+        <item>University of California, Santa Cruzs</item>
+        <item>University of Maryland, Baltimores</item>
+        <item>University at Buffalos</item>
+        <item>University of South Floridas</item>
+        <item>Wayne State Universitys</item>
+        <item>University of Delawares</item>
+        <item>University of Kentuckys</item>
+        <item>Louisiana State Universitys</item>
+        <item>University of New Mexicos</item>
+        <item>University of Nebraska–Lincolns</item>
+        <item>Washington State Universitys</item>
+        <item>George Washington Universitys</item>
+        <item>Southern Methodist Universitys</item>
+        <item>Northeastern Universitys</item>
+        <item>University of South Carolina - Columbias</item>
+        <item>City College of New Yorks</item>
+        <item>Temple Universitys</item>
+        <item>Albert Einstein College of Medicines</item>
+        <item>Drexel Universitys</item>
+        <item>University of Oregons</item>
+        <item>Medical University of South Carolinas</item>
+        <item>University of Oklahoma, Normans</item>
+        <item>University of Texas at Dallass</item>
+        <item>University at Albany, SUNYs</item>
+        <item>Amherst Colleges</item>
+        <item>Indiana University – Purdue University Indianapoliss</item>
+        <item>Texas Tech Universitys</item>
+        <item>Thomas Jefferson Universitys</item>
+        <item>Kansas State Universitys</item>
+        <item>University of Mississippis</item>
+        <item>Tulane Universitys</item>
+        <item>Saint Louis Universitys</item>
+        <item>University of Texas Health Science Center at San Antonios</item>
+        <item>Medical College of Wisconsins</item>
+        <item>University of Colorado Denvers</item>
+        <item>University of Vermonts</item>
+        <item>University of Alabama - Tuscaloosas</item>
+        <item>Syracuse Universitys</item>
+        <item>University of Central Floridas</item>
+        <item>University of Louisvilles</item>
+        <item>Florida International Universitys</item>
+        <item>George Mason Universitys</item>
+        <item>Oklahoma State Universitys</item>
+        <item>West Virginia Universitys</item>
+        <item>Baylor Universitys</item>
+        <item>Lehigh Universitys</item>
+        <item>University of Hawaii at Manoas</item>
+        <item>Rush Universitys</item>
+        <item>University of Tennessee Health Science Centers</item>
+        <item>Swarthmore Colleges</item>
+        <item>Boston Colleges</item>
+        <item>Colorado School of Miness</item>
+        <item>Georgia State Universitys</item>
+        <item>University of Arkansas - Fayettevilles</item>
+        <item>Rensselaer Polytechnic Institutes</item>
+        <item>Clemson Universitys</item>
+        <item>Mayo Clinic College of Medicine and Sciences</item>
+        <item>San Diego State Universitys</item>
+        <item>University of Texas at Arlingtons</item>
+        <item>Illinois Institute of Technologys</item>
+        <item>Auburn Universitys</item>
+        <item>University of Wisconsin–Milwaukees</item>
+        <item>College of William &amp; Marys</item>
+    </string-array>
+
+    <string-array name="fake_schoolist">
+    <item>Albany Medical College</item>
+    <item>Albert Einstein College of Medicine</item>
+    <item>American University</item>
+    <item>Amherst College</item>
+    <item>Antioch College</item>
+    <item>Arizona State University</item>
+    <item>Auburn University</item>
+    <item>Augusta University</item>
+    <item>Babson College</item>
+    <item>Baylor College of Medicine</item>
+    <item>Baylor University</item>
+    <item>Binghamton University</item>
+    <item>Boise State University</item>
+    <item>Boston College</item>
+    <item>Boston University</item>
+    <item>Bowdoin College</item>
+    <item>Bowling Green State University</item>
+    <item>Brandeis University</item>
+    <item>Brigham Young University</item>
+    <item>Brown University</item>
+    <item>Bucknell University</item>
+    <item>California Institute of Technology</item>
+    <item>California Polytechnic State University, San Luis Obispo</item>
+    <item>California State University, Fresno</item>
+    <item>California State University, Fullerton</item>
+    <item>California State University, Long Beach</item>
+    <item>California State University, Northridge</item>
+    <item>Carleton College</item>
+    <item>Carnegie Mellon University</item>
+    <item>Case Western Reserve University</item>
+    <item>Catholic University of America</item>
+    <item>City College of New York</item>
+    <item>Claremont McKenna College</item>
+    <item>Clark University</item>
+    <item>Clarkson University</item>
+    <item>Clemson University</item>
+    <item>Cold Spring Harbor Laboratory</item>
+    <item>Colgate University</item>
+    <item>College of the Holy Cross</item>
+    <item>College of William &amp; Mary</item>
+    <item>Colorado School of Mines</item>
+    <item>Colorado State University</item>
+    <item>Columbia University</item>
+    <item>Cornell University</item>
+    <item>Creighton University</item>
+    <item>Dartmouth College</item>
+    <item>Drexel University</item>
+    <item>Duke University</item>
+    <item>East Carolina University</item>
+    <item>Emory University</item>
+    <item>Florida Atlantic University</item>
+    <item>Florida Institute of Technology</item>
+    <item>Florida International University</item>
+    <item>Florida State University</item>
+    <item>Fordham University</item>
+    <item>George Mason University</item>
+    <item>George Washington University</item>
+    <item>Georgetown University</item>
+    <item>Georgia Institute of Technology</item>
+    <item>Georgia State University</item>
+    <item>Grinnell College</item>
+    <item>Hampton University</item>
+    <item>Harvard University</item>
+    <item>Haverford College</item>
+    <item>Hofstra University</item>
+    <item>Howard University</item>
+    <item>Hunter College</item>
+    <item>Icahn School of Medicine at Mount Sinai</item>
+    <item>Illinois Institute of Technology</item>
+    <item>Indiana University – Purdue University Indianapolis</item>
+    <item>Indiana University Bloomington</item>
+    <item>Iowa State University</item>
+    <item>Johns Hopkins University</item>
+    <item>Kansas State University</item>
+    <item>Kent State University</item>
+    <item>Lehigh University</item>
+    <item>Loma Linda University</item>
+    <item>Louisiana State University</item>
+    <item>Louisiana Tech University</item>
+    <item>Loyola University Chicago</item>
+    <item>Manhattan College</item>
+    <item>Marquette University</item>
+    <item>Massachusetts Institute of Technology</item>
+    <item>Mayo Clinic College of Medicine and Science</item>
+    <item>Medical College of Wisconsin</item>
+    <item>Medical University of South Carolina</item>
+    <item>Menlo College</item>
+    <item>Miami University</item>
+    <item>Michigan State University</item>
+    <item>Michigan Technological University</item>
+    <item>Mississippi State University</item>
+    <item>Missouri University of Science and Technology</item>
+    <item>Montana State University - Bozeman</item>
+    <item>New Jersey Institute of Technology</item>
+    <item>New Mexico State University</item>
+    <item>New York Medical College</item>
+    <item>New York University</item>
+    <item>North Carolina State University</item>
+    <item>North Dakota State University</item>
+    <item>Northeastern University</item>
+    <item>Northern Arizona University</item>
+    <item>Northern Illinois University</item>
+    <item>Northwestern University</item>
+    <item>Oakland University</item>
+    <item>Oberlin College</item>
+    <item>Ohio State University</item>
+    <item>Ohio University</item>
+    <item>Oklahoma State University</item>
+    <item>Old Dominion University</item>
+    <item>Oregon Health &amp; Science University</item>
+    <item>Oregon State University</item>
+    <item>Pennsylvania State University</item>
+    <item>Pepperdine University</item>
+    <item>Pomona College</item>
+    <item>Portland State University</item>
+    <item>Princeton University</item>
+    <item>Purdue University</item>
+    <item>Rensselaer Polytechnic Institute</item>
+    <item>Rice University</item>
+    <item>Rochester Institute of Technology</item>
+    <item>Rockefeller University</item>
+    <item>Rush University</item>
+    <item>Rutgers University–New Brunswick</item>
+    <item>Rutgers University–Newark</item>
+    <item>Saint Louis University</item>
+    <item>San Diego State University</item>
+    <item>San Francisco State University</item>
+    <item>San Jose State University</item>
+    <item>Sanford Burnham Prebys Medical Discovery Institute</item>
+    <item>Santa Clara University</item>
+    <item>Smith College</item>
+    <item>South Dakota State University</item>
+    <item>Southern Illinois University Carbondale</item>
+    <item>Southern Methodist University</item>
+    <item>Stanford University</item>
+    <item>Stevens Institute of Technology</item>
+    <item>Stony Brook University</item>
+    <item>SUNY College of Environmental Science and Forestry</item>
+    <item>SUNY Downstate Medical Center</item>
+    <item>SUNY Upstate Medical University</item>
+    <item>Swarthmore College</item>
+    <item>Syracuse University</item>
+    <item>Temple University</item>
+    <item>Texas A&amp;M University, College Station</item>
+    <item>Texas State University</item>
+    <item>Texas Tech University</item>
+    <item>The Scripps Research Institute</item>
+    <item>Thomas Jefferson University</item>
+    <item>Tufts University</item>
+    <item>Tulane University</item>
+    <item>Uniformed Services University of the Health Sciences</item>
+    <item>United States Military Academy</item>
+    <item>United States Naval Academy</item>
+    <item>University at Albany, SUNY</item>
+    <item>University at Buffalo</item>
+    <item>University of Akron</item>
+    <item>University of Alabama - Tuscaloosa</item>
+    <item>University of Alabama at Birmingham</item>
+    <item>University of Alabama in Huntsville</item>
+    <item>University of Alaska Fairbanks</item>
+    <item>University of Arizona</item>
+    <item>University of Arkansas - Fayetteville</item>
+    <item>University of Arkansas for Medical Sciences</item>
+    <item>University of California, Berkeley</item>
+    <item>University of California, Davis</item>
+    <item>University of California, Irvine</item>
+    <item>University of California, Los Angeles</item>
+    <item>University of California, Merced</item>
+    <item>University of California, Riverside</item>
+    <item>University of California, San Diego</item>
+    <item>University of California, San Francisco</item>
+    <item>University of California, Santa Barbara</item>
+    <item>University of California, Santa Cruz</item>
+    <item>University of Central Florida</item>
+    <item>University of Chicago</item>
+    <item>University of Cincinnati</item>
+    <item>University of Colorado Anschutz Medical Campus</item>
+    <item>University of Colorado Boulder</item>
+    <item>University of Colorado Denver</item>
+    <item>University of Connecticut</item>
+    <item>University of Dayton</item>
+    <item>University of Delaware</item>
+    <item>University of Denver</item>
+    <item>University of Florida</item>
+    <item>University of Georgia</item>
+    <item>University of Hawaii at Manoa</item>
+    <item>University of Houston</item>
+    <item>University of Idaho</item>
+    <item>University of Illinois at Chicago</item>
+    <item>University of Illinois at Urbana–Champaign</item>
+    <item>University of Iowa</item>
+    <item>University of Kansas</item>
+    <item>University of Kentucky</item>
+    <item>University of Louisiana at Lafayette</item>
+    <item>University of Louisville</item>
+    <item>University of Maine, Orono</item>
+    <item>University of Maryland, Baltimore</item>
+    <item>University of Maryland, Baltimore County</item>
+    <item>University of Maryland, College Park</item>
+    <item>University of Massachusetts Amherst</item>
+    <item>University of Massachusetts Boston</item>
+    <item>University of Massachusetts Lowell</item>
+    <item>University of Massachusetts Medical School</item>
+    <item>University of Memphis</item>
+    <item>University of Miami</item>
+    <item>University of Michigan, Ann Arbor</item>
+    <item>University of Minnesota - Twin Cities</item>
+    <item>University of Mississippi</item>
+    <item>University of Missouri-Kansas City</item>
+    <item>University of Missouri-St. Louis</item>
+    <item>University of Missouri–Columbia</item>
+    <item>University of Montana</item>
+    <item>University of Nebraska Medical Center</item>
+    <item>University of Nebraska–Lincoln</item>
+    <item>University of Nevada, Las Vegas</item>
+    <item>University of Nevada, Reno</item>
+    <item>University of New Hampshire</item>
+    <item>University of New Mexico</item>
+    <item>University of North Carolina at Chapel Hill</item>
+    <item>University of North Carolina at Charlotte</item>
+    <item>University of North Carolina at Greensboro</item>
+    <item>University of North Dakota</item>
+    <item>University of North Texas, Denton</item>
+    <item>University of Notre Dame</item>
+    <item>University of Oklahoma Health Sciences Center</item>
+    <item>University of Oklahoma, Norman</item>
+    <item>University of Oregon</item>
+    <item>University of Pennsylvania</item>
+    <item>University of Pittsburgh</item>
+    <item>University of Puerto Rico at Mayagüez</item>
+    <item>University of Puerto Rico, Medical Sciences Campus</item>
+    <item>University of Rhode Island</item>
+    <item>University of Rochester</item>
+    <item>University of South Alabama</item>
+    <item>University of South Carolina - Columbia</item>
+    <item>University of South Florida</item>
+    <item>University of Southern California</item>
+    <item>University of Tennessee Health Science Center</item>
+    <item>University of Tennessee, Knoxville</item>
+    <item>University of Texas at Arlington</item>
+    <item>University of Texas at Austin</item>
+    <item>University of Texas at Dallas</item>
+    <item>University of Texas at El Paso</item>
+    <item>University of Texas at San Antonio</item>
+    <item>University of Texas Health Science Center at Houston</item>
+    <item>University of Texas Health Science Center at San Antonio</item>
+    <item>University of Texas MD Anderson Cancer Center</item>
+    <item>University of Texas Medical Branch</item>
+    <item>University of Texas Rio Grande Valley</item>
+    <item>University of Texas Southwestern Medical Center</item>
+    <item>University of Toledo</item>
+    <item>University of Utah</item>
+    <item>University of Vermont</item>
+    <item>University of Virginia</item>
+    <item>University of Washington - Seattle</item>
+    <item>University of Wisconsin–Madison</item>
+    <item>University of Wisconsin–Milwaukee</item>
+    <item>University of Wyoming</item>
+    <item>Utah State University</item>
+    <item>Vanderbilt University</item>
+    <item>Villanova University</item>
+    <item>Virginia Commonwealth University</item>
+    <item>Virginia Tech</item>
+    <item>Wake Forest University</item>
+    <item>Washington State University</item>
+    <item>Washington University in St. Louis</item>
+    <item>Wayne State University</item>
+    <item>Wesleyan University</item>
+    <item>West Virginia University</item>
+    <item>Western Michigan University</item>
+    <item>Williams College</item>
+    <item>Worcester Polytechnic Institute</item>
+    <item>Wright State University</item>
+    <item>Yale University</item>
+    </string-array>
+</resources>

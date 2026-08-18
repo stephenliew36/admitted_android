@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_adapter_applicationbrief"
+        android:layout_width="343dp"
+        android:layout_height="191dp"
+        android:background="@drawable/bg_frame_f2f4f6"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_applicationbrief_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textRalewaybold15spC4F5257"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="University of California, \nLos Angeles"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_applicationbrief_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textPopin13spC7A8899"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Los Angeles, USA"
+            app:layout_constraintTop_toBottomOf="@+id/tv_adapter_applicationbrief_name"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_applicationbrief_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textPopin13spC7A8899"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Private • $80k"
+            app:layout_constraintTop_toBottomOf="@+id/tv_adapter_applicationbrief_city"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_adapter_applicationbrief_chances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintTop_toTopOf="@+id/tv_adapter_applicationbrief_name"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_adapter_applicationbrief_info">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_adapter_applicationbrief_chance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textPopinBold22spC4F5257"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_adapter_applicationbrief_arrow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0"
+                android:text="85%" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_adapter_applicationbrief_chance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textRaleway10spC4F5257"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_adapter_applicationbrief_arrow"
+                android:text="Your readiness"
+                android:textColor="#7A8899"
+                app:layout_constraintTop_toBottomOf="@+id/tv_adapter_applicationbrief_chance_value"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_adapter_applicationbrief_applying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textRaleway10spC4F5257"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/iv_adapter_applicationbrief_arrow"
+                app:layout_constraintTop_toBottomOf="@+id/tv_adapter_applicationbrief_chance"
+                android:layout_marginTop="8dp"
+                android:text="APPLYING"
+                android:textColor="#7A8899"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:background="@drawable/bg_3f5d95_border"
+                android:visibility="gone"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_adapter_applicationbrief_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vd_ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_adapter_applicationbrief_applying"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_adapter_applicationbrief_chance_value"
+                app:layout_constraintHorizontal_bias="1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_adapter_applicationbrief_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#D6DBE3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_adapter_applicationbrief_info"
+            app:layout_constraintVertical_bias=".2"
+            app:layout_constraintHorizontal_bias="1"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_applicationbrief_regulat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textRaleway10spC4F5257"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_adapter_applicationbrief_applying"
+            android:textColor="#7A8899"
+            android:text="Regular Application 12/18"
+            app:layout_constraintTop_toBottomOf="@+id/iv_adapter_applicationbrief_divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias=".5"
+            app:layout_constraintHorizontal_bias=".9"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/sp_adapter_applicationbrief_applying"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_adapter_applicationbrief_divider"
+            app:layout_constraintHorizontal_bias="1"
+            android:background="@null"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_adapter_applicationbrief_applying"
+            android:layout_width="112dp"
+            android:layout_height="48dp"
+            android:src="@drawable/bg_stroke_9eaec5"
+            android:background="@drawable/bg_corner5_f3f0dd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_adapter_applicationbrief_divider"
+            app:layout_constraintHorizontal_bias="1"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_applicationbrief_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textRalewaybold13spC4F5257"
+            android:textColor="#3F5D95"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_adapter_applicationbrief_applying"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_adapter_applicationbrief_applying"
+            app:layout_constraintRight_toLeftOf="@+id/iv_adapter_applicationbrief_arrow_down"
+            app:layout_constraintTop_toTopOf="@+id/iv_adapter_applicationbrief_applying"
+            app:layout_constraintHorizontal_bias=".95"
+            android:text="waitlisted"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_adapter_applicationbrief_arrow_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vd_ic_arrow_down_black"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_adapter_applicationbrief_applying"
+            app:layout_constraintLeft_toLeftOf="@+id/iv_adapter_applicationbrief_applying"
+            app:layout_constraintRight_toRightOf="@+id/iv_adapter_applicationbrief_applying"
+            app:layout_constraintTop_toTopOf="@+id/iv_adapter_applicationbrief_applying"
+            app:layout_constraintHorizontal_bias=".9"
+            />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_adapter_applicationbrief_spinners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="iv_adapter_applicationbrief_divider,tv_adapter_applicationbrief_regulat,sp_adapter_applicationbrief_applying,iv_adapter_applicationbrief_arrow_down,iv_adapter_applicationbrief_applying,tv_adapter_applicationbrief_apply"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

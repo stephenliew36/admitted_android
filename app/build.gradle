@@ -1,0 +1,181 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
+}
+
+
+android {
+    namespace 'com.realtouchapp.admitted'
+    signingConfigs {
+        debug {
+            storeFile file("${rootDir}/upload.keystore")
+            storePassword '90013701'
+            keyPassword '90013701'
+            keyAlias 'upload'
+        }
+        release {
+            storeFile file("${rootDir}/upload.keystore")
+            storePassword '90013701'
+            keyPassword '90013701'
+            keyAlias 'upload'
+        }
+    }
+
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.realtouchapp.admitted"
+        minSdk 24
+        targetSdk 35
+        versionCode 39
+        versionName '1.2.1'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //指定room.schemaLocation生成的文件路径
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            debuggable false
+        }
+    }
+
+    // 配置复制任务
+    tasks.whenTaskAdded { task ->
+        if (task.name.contains("sign") && task.name.contains("Release")) {
+            task.doLast {
+                def appName = "admitted"
+                def versionName = android.defaultConfig.versionName.replace(".","_")
+                def date = new Date()
+                def formattedDate = date.format('yyyyMMdd_HHmm')
+
+                // 复制APK文件到项目根目录的 release 文件夹，并重命名
+                copy {
+                    from("$buildDir/outputs/apk/release")
+                    into("$rootDir/release")
+                    include('*.apk')
+                    rename { fileName ->
+                        "${appName}_v${versionName}_${formattedDate}.apk"
+                    }
+                }
+
+                // 复制AAB文件到项目根目录的 release 文件夹，并重命名
+                copy {
+                    from("release")
+                    into("$rootDir/release")
+                    include('*.aab')
+                    rename { fileName ->
+                        "${appName}_v${versionName}_${formattedDate}.aab"
+                    }
+                }
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    kotlin {
+        jvmToolchain(17)
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    packaging {
+        resources {
+            // 直接把所有包含 dump_syms 的資料夾排除在外，不包進 APK 裡
+            excludes += "**/dump_syms/**"
+        }
+    }
+    lint {
+        disable 'RtlHardcoded', 'RtlCompat', 'RtlEnabled'
+    }
+}
+
+dependencies {
+
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:3.0.2'
+    implementation 'com.android.billingclient:billing:7.0.0'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.12.0-alpha02'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.5'
+    implementation 'androidx.annotation:annotation:1.7.0'
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+
+    //dataStore
+    implementation 'androidx.datastore:datastore-core:1.0.0'
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+//    implementation fileTree(dir: 'C:\\Users\\didi3\\AndroidStudioProjects\\admitted\\app\\libs', include: ['*.aar', '*.jar'], exclude: [])
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+    implementation 'com.google.firebase:firebase-messaging:24.0.0'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'com.facebook.android:facebook-core:16.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2")
+    //hilt
+    annotationProcessor 'com.google.dagger:hilt-compiler:2.49'
+    implementation 'com.google.dagger:hilt-android:2.49'
+    kapt 'com.google.dagger:hilt-compiler:2.49'
+    //room
+    implementation 'androidx.room:room-runtime:2.6.1'
+    kapt 'androidx.room:room-compiler:2.6.1'
+    implementation 'androidx.room:room-ktx:2.6.1'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+    //Goolge Login
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    // Required when asking for permission to post notifications (starting in Android 13)
+    implementation 'androidx.activity:activity-ktx:1.8.1'
+    implementation 'androidx.fragment:fragment-ktx:1.6.2'
+
+    // Import the Firebase BoM (see: https://firebase.google.com/docs/android/learn-more#bom)
+    implementation platform('com.google.firebase:firebase-bom:33.1.2')
+
+    // Firebase Cloud Messaging (Kotlin)
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+
+    // For an optimal experience using FCM, add the Firebase SDK
+    // for Google Analytics. This is recommended, but not required.
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'com.google.firebase:firebase-installations-ktx:18.0.0'
+
+    implementation 'androidx.work:work-runtime:2.9.0'
+
+    // QRCode scanner
+    implementation("com.google.zxing:core:3.5.2")
+    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
+    // QRCode generator
+    implementation("com.github.androidmads:QRGenerator:1.0.5")
+}

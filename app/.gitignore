@@ -1,0 +1,17 @@
+# Gradle 與 Android 編譯暫存（絕對不要上傳）
+.gradle/
+build/
+captures/
+*.hprof
+
+# 每台電腦各自的 Android SDK 路徑設定檔
+local.properties
+
+# Android Studio 專案個人快取
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/caches/
+*.iml
+
+# 系統雜物
+.DS_Store

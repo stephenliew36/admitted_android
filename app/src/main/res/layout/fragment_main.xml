@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@android:color/white">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".99"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".915"
+    >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/rl_mainacivity_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+            >
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_mainacivity_total"
+                        style="@style/textPopinBold22spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="66"
+                        android:textSize="34sp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_mainacivity_total_desc"
+                        style="@style/textRaleway10spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_mainacivity_total"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginBottom="12dp"
+
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:text="Readiness"/>
+
+                <com.realtouchapp.tools.customview.ClockView
+                        android:id="@+id/clv_main_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_mainacivity_total_what"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_mainacivity_total_desc"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:contentDescription="@string/readiness_help_accessibility"
+                        android:focusable="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_corner5_d2dced"
+                        android:drawableRight="@drawable/ic_search_back_small"
+                        android:drawablePadding="4dp"
+                        android:elevation="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="3dp"
+                        android:singleLine="true"
+                        android:text="What's this?"
+                        android:tooltipText="@string/readiness_help_accessibility"
+                        android:textColor="#4F5257"
+                        android:textSize="11sp"/>
+            </RelativeLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_mainacivity_free_example_roadMap1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+            >
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_mainacivity_free_example_roadMap1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pic_free_example_roadmap1"
+                        android:scaleType="fitCenter"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                />
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_mainacivity_free_example_what"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@+id/iv_mainacivity_free_example_roadMap1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="@+id/iv_mainacivity_free_example_roadMap1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/vd_wthat"
+                        android:scaleType="fitCenter"
+                        app:layout_constraintVertical_bias="1"
+                        app:layout_constraintHorizontal_bias=".8"
+                        android:layout_marginBottom="-40dp"
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:visibility="gone"
+                    android:id="@+id/clRoadMapFreeUpgrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/bg_corner_3f5d95"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias=".975"
+                    android:foreground="?attr/selectableItemBackground"
+            >
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/vd_details"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintHorizontal_bias=".95"
+                />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upgrade to Premium"
+                        android:textColor="@android:color/white"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias=".5"
+                        app:layout_constraintVertical_bias=".2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent=".55"
+                        android:text="Learn about your target, reach, and safety schools"
+                        android:textColor="@android:color/white"
+                        style="@style/textRaleway15spC4F5257"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias=".525"
+                        app:layout_constraintVertical_bias=".7"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/vd_aplus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintHorizontal_bias=".015"
+                />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <RelativeLayout
+                            android:id="@+id/rl_mainacivity_gpa"
+                            android:layout_width="132dp"
+                            android:layout_height="186dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/ll_mainacivity_gpa"
+                                android:layout_width="132dp"
+                                android:layout_height="158dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="23dp"
+                                android:background="@drawable/bg_frame_f2f4f6"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_gpa_title"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:gravity="center"
+                                    android:text="GPA"/>
+
+                            <FrameLayout
+                                    android:layout_width="88dp"
+                                    android:layout_height="20dp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tv_mainacivity_gpa_value"
+                                        style="@style/textRalewaybold13spC4F5257"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="0.0"/>
+                            </FrameLayout>
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="13dp"
+                                    android:background="#D6DBE3"/>
+                            <RelativeLayout
+                                    android:id="@+id/rl_mainacivity_gpa_add"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                            >
+                                <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tv_mainacivity_gpa_add"
+                                        style="@style/textRalewaybold13spC4F5257"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:drawableRight="@drawable/vd_add_new"
+                                        android:gravity="center"
+                                        android:text="Add "
+                                        android:textColor="#3F5D95"/>
+                            </RelativeLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_mainacivity_gpa_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_gpa_more"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="@+id/iv_mainacivity_gpa_more"
+                                    app:layout_constraintBottom_toBottomOf="@+id/iv_mainacivity_gpa_more"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/iv_mainacivity_gpa_more"
+                                    app:layout_constraintHorizontal_chainStyle="packed"
+                                    android:textColor="#3F5D95"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="More "/>
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_mainacivity_gpa_more"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/tv_mainacivity_gpa_more"
+                                    app:layout_constraintDimensionRatio="1:1"
+                                    android:src="@drawable/search_back"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_mainacivity_gpa"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_circle_d6dbe3"
+                                android:padding="8dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/vd_ic_gpa"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/rl_mainacivity_ap"
+                            android:layout_width="132dp"
+                            android:layout_height="186dp"
+                            android:layout_marginLeft="16dp"
+
+                    >
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/ll_mainacivity_ap"
+                                android:layout_width="132dp"
+                                android:layout_height="158dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="23dp"
+                                android:background="@drawable/bg_frame_f2f4f6"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_ap_title"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:gravity="center"
+                                    android:text="Academic \nPerformace"/>
+
+                            <ProgressBar
+                                    android:id="@+id/pb_mainacivity_ap"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="88dp"
+                                    android:layout_height="8dp"
+                                    android:max="100"
+                                    android:progress="90"
+
+                                    android:progressDrawable="@drawable/bg_progress"/>
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="13dp"
+                                    android:background="#D6DBE3"/>
+                            <RelativeLayout
+                                    android:id="@+id/rl_mainacivity_ap_add"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                            >
+                                <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tv_mainacivity_ap_add"
+                                        style="@style/textRalewaybold13spC4F5257"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#3F5D95"
+                                        android:layout_centerHorizontal="true"
+                                        android:drawableRight="@drawable/vd_add_new"
+                                        android:gravity="center"
+                                        android:text="Add "/>
+                            </RelativeLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_mainacivity_ap_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_ap_more"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="@+id/iv_mainacivity_ap_more"
+                                    app:layout_constraintBottom_toBottomOf="@+id/iv_mainacivity_ap_more"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/iv_mainacivity_ap_more"
+                                    app:layout_constraintHorizontal_chainStyle="packed"
+                                    android:textColor="#3F5D95"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="More "/>
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_mainacivity_ap_more"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/tv_mainacivity_ap_more"
+                                    app:layout_constraintDimensionRatio="1:1"
+                                    android:src="@drawable/search_back"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_mainacivity_ap"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_circle_d6dbe3"
+                                android:padding="8dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/vd_ic_academics"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/rl_mainacivity_ic"
+                            android:layout_width="132dp"
+                            android:layout_height="186dp"
+                            android:layout_marginLeft="16dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/ll_mainacivity_ic"
+                                android:layout_width="132dp"
+                                android:layout_height="158dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="23dp"
+                                android:background="@drawable/bg_frame_f2f4f6"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_ic_title"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:gravity="center"
+                                    android:text="Intellectual \nCuriosity"/>
+
+                            <ProgressBar
+                                    android:id="@+id/pb_mainacivity_ic"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="88dp"
+                                    android:layout_height="8dp"
+                                    android:max="70"
+                                    android:progress="90"
+                                    android:progressDrawable="@drawable/bg_progress"/>
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="13dp"
+                                    android:background="#D6DBE3"/>
+                            <RelativeLayout
+                                    android:id="@+id/rl_mainacivity_ic_add"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                            >
+                                <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tv_mainacivity_ic_add"
+                                        style="@style/textRalewaybold13spC4F5257"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/vd_add_new"
+                                        android:textColor="#3F5D95"
+                                        android:gravity="center"
+                                        android:layout_centerHorizontal="true"
+                                        android:text="Add "/>
+                            </RelativeLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_mainacivity_ic_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_ic_more"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="@+id/iv_mainacivity_ic_more"
+                                    app:layout_constraintBottom_toBottomOf="@+id/iv_mainacivity_ic_more"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/iv_mainacivity_ic_more"
+                                    app:layout_constraintHorizontal_chainStyle="packed"
+                                    android:textColor="#3F5D95"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="More "/>
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_mainacivity_ic_more"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/tv_mainacivity_ic_more"
+                                    app:layout_constraintDimensionRatio="1:1"
+                                    android:src="@drawable/search_back"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_mainacivity_ic"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_circle_d6dbe3"
+                                android:padding="8dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/vd_ic_intellectual_interests"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/rl_mainacivity_ci"
+                            android:layout_width="132dp"
+                            android:layout_height="186dp"
+                            android:layout_marginLeft="16dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/ll_mainacivity_ci"
+                                android:layout_width="132dp"
+                                android:layout_height="158dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="23dp"
+                                android:background="@drawable/bg_frame_f2f4f6"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_ci_title"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:gravity="center"
+                                    android:text="Community\nImpact"/>
+
+                            <ProgressBar
+                                    android:id="@+id/pb_mainacivity_ci"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="88dp"
+                                    android:layout_height="8dp"
+                                    android:max="30"
+                                    android:progress="90"
+                                    android:progressDrawable="@drawable/bg_progress"/>
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="13dp"
+                                    android:background="#D6DBE3"/>
+                            <RelativeLayout
+                                    android:id="@+id/rl_mainacivity_ci_add"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                            >
+                                <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tv_mainacivity_ci_add"
+                                        style="@style/textRalewaybold13spC4F5257"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/vd_add_new"
+                                        android:textColor="#3F5D95"
+                                        android:layout_centerHorizontal="true"
+                                        android:gravity="center"
+                                        android:text="Add "/>
+                            </RelativeLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_mainacivity_ci_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_ci_more"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="@+id/iv_mainacivity_ci_more"
+                                    app:layout_constraintBottom_toBottomOf="@+id/iv_mainacivity_ci_more"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/iv_mainacivity_ci_more"
+                                    app:layout_constraintHorizontal_chainStyle="packed"
+                                    android:textColor="#3F5D95"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="More "/>
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_mainacivity_ci_more"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/tv_mainacivity_ci_more"
+                                    app:layout_constraintDimensionRatio="1:1"
+                                    android:src="@drawable/search_back"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_mainacivity_ci"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_circle_d6dbe3"
+                                android:padding="8dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/vd_ic_community_imapct"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:id="@+id/rl_mainacivity_honors"
+                            android:layout_width="132dp"
+                            android:layout_height="186dp"
+                            android:layout_marginLeft="16dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                                android:id="@+id/ll_mainacivity_honors"
+                                android:layout_width="132dp"
+                                android:layout_height="158dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="23dp"
+                                android:layout_marginEnd="0dp"
+                                android:background="@drawable/bg_frame_f2f4f6"
+                                android:gravity="center_horizontal|bottom"
+                                android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_honors_title"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+
+                                    android:gravity="center"
+                                    android:text="Honors &amp;\nAwards"/>
+
+                            <ProgressBar
+                                    android:id="@+id/pb_mainacivity_honors"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="88dp"
+                                    android:layout_height="8dp"
+                                    android:max="100"
+                                    android:progress="90"
+                                    android:progressDrawable="@drawable/bg_progress"/>
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="13dp"
+                                    android:background="#D6DBE3"/>
+                            <RelativeLayout
+                                    android:id="@+id/rl_mainacivity_honors_add"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                            >
+                                <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tv_mainacivity_honors_add"
+                                        style="@style/textRalewaybold13spC4F5257"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableRight="@drawable/vd_add_new"
+                                        android:textColor="#3F5D95"
+                                        android:layout_centerHorizontal="true"
+                                        android:gravity="center"
+                                        android:text="Add "/>
+                            </RelativeLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/cl_mainacivity_honors_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_mainacivity_honors_more"
+                                    style="@style/textRalewaybold13spC4F5257"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="@+id/iv_mainacivity_honors_more"
+                                    app:layout_constraintBottom_toBottomOf="@+id/iv_mainacivity_honors_more"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@+id/iv_mainacivity_honors_more"
+                                    app:layout_constraintHorizontal_chainStyle="packed"
+                                    android:textColor="#3F5D95"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="More "/>
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/iv_mainacivity_honors_more"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/tv_mainacivity_honors_more"
+                                    app:layout_constraintDimensionRatio="1:1"
+                                    android:src="@drawable/search_back"/>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_mainacivity_honors"
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/bg_circle_d6dbe3"
+                                android:padding="8dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/vd_ic_honors"/>
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </HorizontalScrollView>
+            <RelativeLayout
+                    android:id="@+id/rl_mainacivity_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="121dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_frame_f2f4f6"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_mainacivity_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_d6dbe3"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/vd_ic_tests"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@+id/iv_mainacivity_test"
+                        android:layout_toLeftOf="@+id/iv_mainacivity_test_divider">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_mainacivity_test"
+                            style="@style/textRalewaybold13spC4F5257"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center"
+                            android:text="Standardized Tests"
+                            android:textSize="17sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_mainacivity_test_desp"
+                            style="@style/textRaleway_regular13spC4F5257"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:gravity="center"
+                            android:text=""/>
+
+                    <ProgressBar
+                            android:id="@+id/pb_mainacivity_test"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="155dp"
+                            android:layout_height="8dp"
+                            android:max="100"
+                            android:progress="90"
+                            android:progressDrawable="@drawable/bg_progress"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_mainacivity_test_divider"
+                        android:layout_width="1dp"
+                        android:layout_height="97dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="13dp"
+                        android:layout_toLeftOf="@+id/iv_mainacivity_test_add"
+                        android:background="#D6DBE3"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_mainacivity_test_add"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/vd_add_new"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_mainacivity_test_more"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/search_back"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_mainacivity_interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_frame_f2f4f6"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="121dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_mainacivity_interest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/bg_circle_d6dbe3"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/vd_ic_interests"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/iv_mainacivity_interest"
+                            android:layout_toStartOf="@+id/iv_mainacivity_interest_extend"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_mainacivity_interest"
+                                style="@style/textRalewaybold13spC4F5257"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="12dp"
+                                android:gravity="center"
+                                android:text="Areas of Interest"
+                                android:textSize="17sp"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_mainacivity_interest_desp"
+                                style="@style/textRaleway_regular13spC4F5257"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="12dp"
+                                android:gravity="center"
+                                android:maxLines="3"
+                                android:text=" "/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_mainacivity_interest_extend"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/vd_ic_arrow_dwon_black"/>
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/ll_mainacivity_interest_ctl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_mainacivity_interest_divider_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#D6DBE3"
+                            android:visibility="gone"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_mainacivity_interest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:visibility="gone"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_mainacivity_interest_divider_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#D6DBE3"
+                            android:visibility="gone"/>
+
+                    <RelativeLayout
+                            android:id="@+id/rl_mainacivity_interest_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/selector_btn_default"
+                                android:fontFamily="@font/raleway_bold"
+                                android:lineSpacingExtra="3sp"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableRight="@drawable/vd_ic_edit_white"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/rl_mainacivity_done"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_mainacivity_free_example_roadMap2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pic_free_example_roadmap2"
+                    android:scaleType="fitStart"
+                    android:visibility="gone"
+            />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_mainacivity_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/bg_frame_f2f4f6"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_mainacivity_school"
+                            style="@style/textRalewaybold13spC4F5257"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Schools You Saved"
+                            android:textSize="17sp"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_mainacivity_school_edit"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/vd_ic_edit"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_mainacivity_school_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_btn2_default"
+                            android:fontFamily="@font/raleway_bold"
+                            android:lineSpacingExtra="3sp"
+                            android:text="Cancel"
+                            android:textAllCaps="false"
+                            android:textColor="#4F5257"
+                            android:textSize="13sp"
+                            android:visibility="gone"/>
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="#D6DBE3"
+                />
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_mainacivity_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                />
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_mainacivity_school_edit_divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="#D6DBE3"
+                        android:visibility="gone"
+                />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/ll_mainacivity_school_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_mainacivity_school_remove"
+                            style="@style/textRaleway_regular13spC4F5257"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:textColor="#3F5D95"
+                            android:text="Remove"
+                            android:padding="5dp"
+                            android:background="?android:attr/selectableItemBackground"/>
+
+                    <RelativeLayout
+                            android:id="@+id/rl_mainacivity_school_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_margin="5dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/selector_btn_default"
+                                android:fontFamily="@font/raleway_bold"
+                                android:lineSpacingExtra="3sp"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:drawableRight="@drawable/vd_ic_add_white"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="Add to Applications\t"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_mainacivity_school_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/selector_btn_default"
+                    android:fontFamily="@font/raleway_bold"
+                    android:lineSpacingExtra="3sp"
+                    android:text="Add School"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

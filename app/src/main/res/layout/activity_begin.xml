@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".begin.view.BeginActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_begin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="H,1.1649:1"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.75"
+        app:srcCompat="@drawable/vd_ic_info_main" />
+
+    <TextView
+        android:id="@+id/tv_begin_weclome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:lineSpacingExtra="-3sp"
+        android:text="@string/welcome_to_admitted"
+        android:textSize="34sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_begin"
+        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.95" />
+
+    <TextView
+        android:id="@+id/tv_begin_create"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_regular"
+
+        android:gravity="center"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/create_account"
+        android:textSize="13sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_begin_weclome"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_begin_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_regular"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/get_started"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:background="@drawable/selector_btn_default"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_begin_create"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <TextView
+        android:id="@+id/tv_begin_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_regular"
+        android:gravity="center_horizontal|top"
+
+        android:lineSpacingExtra="3sp"
+        android:text="@string/get_started"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:translationY="-1.47sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btn_begin_start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_begin_start"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.85"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_begin_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/tv_begin_account_1"
+        android:textSize="13sp"
+        android:textColor="#7A8899"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_begin_start"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.85" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

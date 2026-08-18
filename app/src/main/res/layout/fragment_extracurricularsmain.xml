@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".915"
+        android:layout_marginTop="5dp"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_extracurricularsmain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableLeft="@drawable/vd_ic_search"
+            style="@style/textRaleway_regular13spC4F5257"
+            android:textColor="#4F5257"
+            android:textColorHint="#BDBDBD"
+            android:paddingLeft="15dp"
+            android:drawablePadding="10dp"
+            android:hint="Search Extracurriculars"
+            android:background="@drawable/bg_frame_f2f4f6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".746"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".062"
+
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_extracurricularsmain_filter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".093"
+            android:src="@drawable/vd_ic_filter"
+            app:layout_constraintLeft_toRightOf="@+id/et_extracurricularsmain"
+            app:layout_constraintBottom_toBottomOf="@+id/et_extracurricularsmain"
+            app:layout_constraintRight_toLeftOf="@+id/iv_extracurricularsmain_fav"
+            app:layout_constraintTop_toTopOf="@+id/et_extracurricularsmain"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_extracurricularsmain_fav"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".093"
+            android:src="@drawable/vd_ic_favorite"
+            app:layout_constraintBottom_toBottomOf="@+id/et_extracurricularsmain"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_extracurricularsmain"
+            app:layout_constraintHorizontal_bias="1"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_extracurricularsmain"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="5dp"
+            >
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_fragment_extracurricularsmain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="50dp"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

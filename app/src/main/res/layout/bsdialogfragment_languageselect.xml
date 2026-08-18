@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_bsdf_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_bsdf_language_divider"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:src="#BDBDBD"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bsdf_language_title"
+                style="@style/textRalewaybold17spC4F5257"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Requirement for the language exam (TOEFL, IELTS)" />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_bsdf_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_et_default"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="10dp"
+                app:strokeColor="#9EAEC5"
+                app:strokeWidth="1dp"
+                android:layout_gravity="center"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_bsdf_language_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="-1dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_bsdf_language_select_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        style="@style/textRalewaybold10spC4F5257"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:background="#F1E9E5"
+                        android:text="Yes" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#9EAEC5"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_bsdf_language_select_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        style="@style/textRalewaybold10spC4F5257"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="No"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vd_ic_exclamation"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_bsdf_language_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:text="You are required to take the language exam (TOEFL, IELTS) if you qualify for any of the following:\n
+．You are not a citizen of an English-speaking country.
+．You go to a high school where English is not spoken as the main language.
+．Reminder: each school’s requirement is different. Please check in with the school you plan on applying to."
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_bsdf_language_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_default"
+                android:fontFamily="@font/raleway_regular"
+                android:lineSpacingExtra="3sp"
+                android:text="@string/btn_bsdf_interset_done"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

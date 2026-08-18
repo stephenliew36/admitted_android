@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlSymmetry">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_basicinfo2_descrip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/textPopin10spC4F5257"
+        android:gravity="center"
+        android:text="@string/tv_basicinfo2_descrip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".066"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".95" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_basicinfo2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_basicinfo2_title"
+
+        style="@style/textPopinBold22spC4F5257"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".95" />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_basicinfo2_schoolsystem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basicinfo2_schoolsystem"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_basicinfo2_schoolsystem"
+        app:layout_constraintRight_toRightOf="@+id/tv_basicinfo2_schoolsystem"
+        app:layout_constraintTop_toTopOf="@+id/tv_basicinfo2_schoolsystem"
+        />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_basicinfo2_gradingscale"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basicinfo2_gradingscale"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_basicinfo2_gradingscale"
+        app:layout_constraintRight_toRightOf="@+id/tv_basicinfo2_gradingscale"
+        app:layout_constraintTop_toTopOf="@+id/tv_basicinfo2_gradingscale"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sp_basicinfo2_schedule"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basicinfo2_schedule"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_basicinfo2_schedule"
+        app:layout_constraintRight_toRightOf="@+id/tv_basicinfo2_schedule"
+        app:layout_constraintTop_toTopOf="@+id/tv_basicinfo2_schedule"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_basicinfo2_schoolsystem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/tv_basicinfo2_schoolsystem_hint"
+        android:paddingLeft="10dp"
+        android:background="@drawable/selector_et_default"
+        style="@style/textPopin13spC4F5257"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".062"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias=".201"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".91"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:src="@drawable/arrow_down"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basicinfo2_schoolsystem"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_basicinfo2_schoolsystem"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintWidth_percent=".032"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_basicinfo2_gradingscale"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/tv_basicinfo2_gradingscale_hint"
+        android:paddingLeft="10dp"
+        android:background="@drawable/selector_et_default"
+        style="@style/textPopin13spC4F5257"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".062"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.2844155844"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".91" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_basicinfo2_schedule"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Schedule"
+        android:paddingLeft="10dp"
+        android:background="@drawable/selector_et_default"
+        style="@style/textPopin13spC4F5257"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".062"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.3675324675"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".91" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:src="@drawable/arrow_down"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basicinfo2_schoolsystem"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_basicinfo2_schoolsystem"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintWidth_percent=".032"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:src="@drawable/arrow_down"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basicinfo2_gradingscale"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_basicinfo2_gradingscale"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintWidth_percent=".032"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:src="@drawable/arrow_down"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_basicinfo2_schedule"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_basicinfo2_schedule"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintWidth_percent=".032"
+        />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/textPopin13spC7A8899"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv_basicinfo2_descrip2"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".95" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_basicinfo2_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vd_bg_btn_disabled"
+        android:fontFamily="@font/raleway_regular"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/btn_basicinfo2_next"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

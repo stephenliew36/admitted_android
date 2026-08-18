@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_bsdf_collegefilter_divider"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:src="#BDBDBD"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bsdf_collegefilter_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textRalewaybold17spC4F5257"
+                android:text="Filter by"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bsdf_collegefilter_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textRalewaybold15spC4F5257"
+                android:text="Country"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableRight="@drawable/vd_ic_arrow_top"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6DBE3"
+                android:layout_marginBottom="10dp"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_bsdf_collegefilter_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="United States"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bsdf_collegefilter_difficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textRalewaybold15spC4F5257"
+                android:text="Difficulty"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableRight="@drawable/vd_ic_arrow_top"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/v_bsdf_collegefilter_difficulty"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6DBE3"
+                android:layout_marginBottom="10dp"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_bsdf_collegefilter_difficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_farreach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Far Reach Schools"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_reach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reach Schools"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Target Schools"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_safety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Safety Schools"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bsdf_collegefilter_public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textRalewaybold15spC4F5257"
+                android:text="Public / Private"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableRight="@drawable/vd_ic_arrow_top"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6DBE3"
+                android:layout_marginBottom="10dp"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_bsdf_collegefilter_public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_public"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Public Schools"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_private"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Private Schools"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bsdf_collegefilter_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textRalewaybold15spC4F5257"
+                android:text="Others"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableRight="@drawable/vd_ic_arrow_top"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D6DBE3"
+                android:layout_marginBottom="10dp"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_bsdf_collegefilter_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_liberal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Liberal Arts Schools"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cb_bsdf_collegefilter_art"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Art Schools"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layoutDirection="rtl"
+                    app:buttonTint="#3F5D95"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_bsdf_collegefilter_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_default"
+                android:fontFamily="@font/raleway_bold"
+                android:lineSpacingExtra="3sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_bsdf_collegefilter_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Clear All"
+                android:textAllCaps="false"
+                android:textColor="#3F5D95"
+                android:gravity="center"
+                style="@style/textRalewaybold13spC4F5257"
+                android:textSize="14sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

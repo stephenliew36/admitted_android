@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_web_client_id" translatable="false">YOUR_GOOGLE_WEB_CLIENT_ID.apps.googleusercontent.com</string>
+    <string name="google_client_secret" translatable="false">YOUR_GOOGLE_CLIENT_SECRET</string>
+    <string name="facebook_app_id" translatable="false">YOUR_FACEBOOK_APP_ID</string>
+</resources>

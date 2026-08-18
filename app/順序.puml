@@ -1,0 +1,7 @@
+@startuml
+[*] --> Idle
+Idle --> Processing : startProcessing()
+Processing --> Idle : stopProcessing()
+Processing --> Completed : processingComplete()
+Completed --> Idle : reset()
+@enduml

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".member.view.activity.VerifyEmailActivity">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_verifyemail_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/arrow_left"
+        android:padding="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+
+        app:layout_constraintWidth_percent=".064"
+        app:layout_constraintHeight_percent=".052"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintHorizontal_bias=".043"
+
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_verifyemail_title"
+        android:text="@string/tv_verifyemail_title"
+        style="@style/textPopinBold22spC4F5257"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".025"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv_verifyemail_descr"
+        android:textSize="13sp"
+        android:textColor="#4F5257"
+        android:lineSpacingExtra="1sp"
+        android:letterSpacing="0.02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".09"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".9" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/et_verifyemail_firstname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+
+        app:layout_constraintHeight_percent=".09"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".18"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".99">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_verify_code1"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_et_default"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+
+            android:textCursorDrawable="@drawable/et_cursor"
+            app:layout_constraintEnd_toStartOf="@+id/et_verify_code2"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_verify_code2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_et_default"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@drawable/et_cursor"
+            app:layout_constraintEnd_toStartOf="@+id/et_verify_code3"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/et_verify_code1"
+            
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_verify_code3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_et_default"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@drawable/et_cursor"
+            app:layout_constraintEnd_toStartOf="@+id/et_verify_code4"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/et_verify_code2"
+            
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_verify_code4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_et_default"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@drawable/et_cursor"
+            app:layout_constraintEnd_toStartOf="@+id/et_verify_code5"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/et_verify_code3"
+            
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_verify_code5"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_et_default"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@drawable/et_cursor"
+            app:layout_constraintEnd_toStartOf="@+id/et_verify_code6"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/et_verify_code4"
+            
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_verify_code6"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/selector_et_default"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@drawable/et_cursor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/et_verify_code5"
+            
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_verifyemail_send"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Didn’t receive a code? Request again"
+        android:textSize="13sp"
+        android:textColor="#7A8899"
+        android:lineSpacingExtra="1sp"
+        android:letterSpacing="0.02"
+        
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".28"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".9" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_verifyemail_create"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vd_bg_btn_disabled"
+        android:fontFamily="@font/raleway_regular"
+        android:lineSpacingExtra="3sp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".36"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

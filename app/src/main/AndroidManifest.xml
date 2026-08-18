@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <!--    //增加手機定位權限-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 相機  -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <!-- 移除不必要的相簿權限以符合 Google Play 政策 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" tools:node="remove" />
+
+    <application
+        android:name=".begin.view.AdmittedApplication"
+        tools:replace="android:allowBackup"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".begin.view.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".main.roadmmap.ui.activity.ProfileActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".main.roadmmap.ui.activity.AccountTypeActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".member.view.activity.NotificaitonActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".test.TestActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.MyApplication">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.roadmmap.ui.activity.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".begin.view.BeginActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.InfoActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.SubscribeActivity"
+            android:launchMode="singleTop"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.SelectFreeOrPremiumActivity"
+            android:launchMode="singleTop"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.PremiumActivity"
+            android:launchMode="singleInstance"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.SelectParentOrStudentActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.ScanStudentQrcodeActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.AddStudentInfoActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.ParentEditStudentActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".begin.view.ParentMainActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".member.view.activity.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".member.view.activity.VerifyEmailActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".member.view.activity.BasicInfoActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".member.view.activity.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".member.view.activity.ResetPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".main.roadmmap.ui.activity.MyQrcodeActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+
+
+        <service
+            android:name=".fcm.AdmittedFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        
+        <!-- Trigger Google Play services to install the backported photo picker module. -->
+        <!--suppress AndroidDomInspection -->
+        <service android:name="com.google.android.gms.metadata.ModuleDependencies"
+            android:enabled="false"
+            android:exported="false"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value="" />
+        </service>
+
+</application>
+
+</manifest>

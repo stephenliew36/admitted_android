@@ -1,0 +1,825 @@
+<resources>
+    <string name="billing_unavailable_message">Google Play billing is unavailable. Check your connection and try again.</string>
+    <string name="billing_cancelled_message">Purchase cancelled. Your subscription was not changed.</string>
+    <string name="readiness_help_accessibility">Learn how the Level of Readiness score is calculated</string>
+    <string name="explore_filter_accessibility">Filter colleges</string>
+    <string name="explore_saved_accessibility">Show saved colleges</string>
+    <string name="gpa_conversion_action">GPA • View grading scale</string>
+    <string name="gpa_conversion_accessibility">View GPA grading scale and conversion help</string>
+    <string name="gpa_conversion_title">GPA Conversion Chart</string>
+    <string name="gpa_conversion_help">Common 4.0-scale reference. Your school may use a different conversion.\n\nA / A+     4.0\nA−          3.7\nB+          3.3\nB           3.0\nB−          2.7\nC+          2.3\nC           2.0\nC−          1.7\nD+          1.3\nD           1.0\nF           0.0</string>
+    <string name="school_photo">School photo</string>
+    <string name="school_website_unavailable">This school\'s website isn\'t available yet.</string>
+    <string name="school_admissions_unavailable">This school\'s admissions info isn\'t available yet.</string>
+    <string name="app_name">Admitted</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+
+
+    <!--  LoginActivity  -->
+    <string name="tab_1_">Roadmap</string>
+    <string name="tab_2_">Explore</string>
+    <string name="tab_3_"></string>
+    <string name="tab_4_">Consult</string>
+    <string name="tab_5_">Applications</string>
+
+
+    <!--  BeginActivity  -->
+    <string name="welcome_to_admitted">Welcome to Admitted!</string>
+    <string name="create_account">Create an account now to get started on your college application journey</string>
+    <string name="get_started">Get Started</string>
+    <string name="tv_begin_account_1">Already have an account?</string>
+    <string name="tv_begin_account_2"> Login</string>
+
+    <!--  RegisterActivity  -->
+    <string name="register_title">Create Account</string>
+    <string name="tv_register_description">Create an account now to get started on your\n college application journey</string>
+    <string name="et_register_firstname">First Name</string>
+    <string name="et_register_lastname">Last Name</string>
+    <string name="et_register_email">Email</string>
+    <string name="et_register_password">Password (8+ characters)</string>
+    <string name="tv_register_password_error">Password must contain at least 8 characters.</string>
+    <string name="tv_register_privacy">By continuing, you agree to Admitted’s</string>
+    <string name="tv_register_privacy1">Terms &amp; Conditions</string>
+    <string name="tv_register_privacy2">\tand\t</string>
+    <string name="tv_register_privacy3">Privacy Policy</string>
+    <string name="btn_register_create">Create Account</string>
+    <string name="btn_register_fb">Continue with Facebook</string>
+    <string name="btn_register_google">Continue with Google</string>
+    <string name="tv_verifyemail_title">Verify Your Email</string>
+    <string name="tv_verifyemail_descr">An email with a verification code has been sent\n to your inbox</string>
+
+
+    <!--  BasicInfoActivity  -->
+    <string-array name="grade_levels">
+        <item>9th Grade</item>
+        <item>10th Grade</item>
+        <item>11th Grade</item>
+        <item>12th Grade</item>
+    </string-array>
+
+    <string-array name="gpaPoint">
+        <item>2.0</item>
+        <item>2.1</item>
+        <item>2.2</item>
+        <item>2.3</item>
+        <item>2.4</item>
+        <item>2.5</item>
+        <item>2.6</item>
+        <item>2.7</item>
+        <item>2.8</item>
+        <item>2.9</item>
+        <item>3.0</item>
+        <item>3.1</item>
+        <item>3.2</item>
+        <item>3.3</item>
+        <item>3.4</item>
+        <item>3.5</item>
+        <item>3.6</item>
+        <item>3.7</item>
+        <item>3.8</item>
+        <item>3.9</item>
+        <item>4.0</item>
+        <item>4.1</item>
+        <item>4.2</item>
+        <item>4.3</item>
+        <item>4.4</item>
+        <item>4.5</item>
+        <item>4.6</item>
+        <item>4.7</item>
+        <item>4.8</item>
+        <item>4.9</item>
+        <item>5.0</item>
+    </string-array>
+    <!--  VerifyEmailActivity  -->
+    <!--  ResetPasswordActivity  -->
+
+    <string name="tv_basicinfo1_descrip">Tell us more about you!</string>
+    <string name="tv_basicinfo1_title">Your Basic Info</string>
+    <string name="tv_basicinfo1_national_hint">Your Nationality</string>
+    <string name="tv_basicinfo1_language_hint">Requirement for the language exam</string>
+    <string name="tv_basicinfo1_school_hint">Your School</string>
+    <string name="tv_basicinfo1_grade_hint">Your Grade</string>
+    <string name="tv_basicinfo1_gpa9_hint">Your GPA (9th Grade)</string>
+    <string name="tv_basicinfo1_gpa10_hint">Your GPA (10th Grade)</string>
+    <string name="tv_basicinfo1_gpa11_hint">Your GPA (11th Grade)</string>
+    <string name="tv_basicinfo1_gpa12_hint">Your GPA (12th Grade)</string>
+    <string name="tv_basicinfo1_descrip2">We use this information to understand your\n background for further recommendations.</string>
+    <string name="btn_basicinfo1_next">Next</string>
+    <string name="et_login_password_hint">Password</string>
+
+    <!--  LoginActivity  -->
+    <string name="tv_login_title">Welcome Back</string>
+    <string name="tv_login_privacy">By continuing, you agree to Admitted’s</string>
+    <string name="tv_login_privacy1">Terms &amp; Conditions</string>
+    <string name="tv_login_privacy2">\tand\t</string>
+    <string name="tv_login_privacy3">Privacy Policy</string>
+    <string name="btn_login_login">LogIn</string>
+    <string name="tv_login_forgot">Forgot your password?</string>
+    <string name="btn_login_fb">Continue with Facebook</string>
+    <string name="btn_login_apple">Continue with Apple</string>
+    <string name="btn_login_google">Continue with Google</string>
+    <string name="tv_login_or">or</string>
+
+
+    <string name="tv_resetpassword_description">Please enter your email to reset your password</string>
+    <string name="tv_resetpassword_title">Reset Password</string>
+
+
+    <string name="tv_basicinfo2_descrip">Tell us about your school!</string>
+    <string name="tv_basicinfo2_title">Your School</string>
+    <string name="tv_basicinfo2_schoolsystem_hint">School System</string>
+    <string-array name="array_school_system">
+        <item>US ,System</item>
+        <item>Others (including IB)</item>
+    </string-array>
+    <string name="tv_basicinfo2_gradingscale_hint">Grading Scale</string>
+    <string-array name="array_gradingscale">
+        <item>A-F</item>
+        <item>1-100</item>
+        <item>1-7</item>
+        <item>Others ( Please use percentage when prompted to enter your score)</item>
+
+    </string-array>
+
+    <string-array name="array_schedule">
+        <item>Semesters</item>
+        <item>Trimesters</item>
+        <item>Quarters</item>
+        <item>Yearly</item>
+        <item>Other</item>
+    </string-array>
+    <string name="tv_basicinfo2_descrip2">We use this information to understand your\n background for further recommendations.</string>
+    <string name="btn_basicinfo2_next">Next</string>
+
+    <string name="tv_basicinfo3_title">Your Preferences (Optional)</string>
+    <string name="tv_basicinfo3_descrip">Any dream school in mind?</string>
+    <string name="btn_basicinfo3_skip">Skip</string>
+    <string name="tv_basicinfo4_descrip">Have you taken any standardized\ntests? Tell us how you did</string>
+    <string name="tv_basicinfo4_title">Your Test Scores (Optional)</string>
+    <string name="tv_basicinfo4_descrip2">We use this information to calculate and provide\n you with personalized recommendations for your\n college applications</string>
+    <string name="btn_basicinfo4_addtest">Add Test \t＋</string>
+    <string name="tv_basicinfo3_interest">Area of Interest</string>
+    <string name="btn_basicinfo3_addinterest">Add Area of Interest \t＋</string>
+    <string name="tv_basicinfo3_targetschool">Target School</string>
+    <string name="btn_basicinfo3_addtargetschool">Add School \t＋</string>
+
+    <string name="btn_bsdf_interset_done">Done</string>
+    <string name="btn_bsdf_school_done">Done</string>
+    <string name="et_bsdf_school_hint">Search School</string>
+
+    <string name="test_type_sat">SAT</string>
+    <string name="test_type_act">ACT</string>
+    <string name="test_type_toefl">TOEFL iBT</string>
+    <string name="test_type_ielts">IELTS</string>
+    <string name="test_type_apexam">AP Exam</string>
+    <string name="test_type_toefl_alternate">TOEFL (1 - 6)</string>
+    <string name="test_type_ib">IB</string>
+    <string name="test_type_duolingo">Duolingo English Test</string>
+
+    <string-array name="array_addtest_type">
+        <item>@string/test_type_sat</item>
+        <item>@string/test_type_act</item>
+        <item>@string/test_type_toefl</item>
+        <item>@string/test_type_ielts</item>
+        <item>@string/test_type_apexam</item>
+        <item>@string/test_type_toefl_alternate</item>
+        <item>@string/test_type_ib</item>
+        <item>@string/test_type_duolingo</item>
+
+    </string-array>
+    <string name="tv_bsdf_addtest_add">Add Test</string>
+    <string name="tv_bsdf_addtest_edit">Edit Test</string>
+    <string name="tv_bsdf_addtest_name">Test Name</string>
+    <string name="tv_bsdf_addtest_date">Date</string>
+    <string name="et_bsdf_addtest_apsubject_hint">Select from the  following options</string>
+    <string name="tv_bsdf_addtest_apsubject">Subject</string>
+    <string name="et_bsdf_addtest_name_hint">Select from the  following options</string>
+    <string name="et_bsdf_addtest_date_month_hint">Month</string>
+    <string name="et_bsdf_addtest_date_year_hint">Year</string>
+    <string name="tv_bsdf_addtest_score">Score</string>
+
+    <string name="et_bsdf_addtest_score_max_hint_sat">/ 1600</string>
+    <string name="et_bsdf_addtest_score_max_hint_act">/ 36</string>
+    <string name="et_bsdf_addtest_score_max_hint_toefl">/ 120</string>
+    <string name="et_bsdf_addtest_score_max_hint_ielts">/ 9.0</string>
+    <string name="et_bsdf_addtest_score_max_hint_ap">/ 5</string>
+    <string name="rl_mainacivity_done">Edit Interests\t</string>
+    <string name="btn_adapter_recycleview_view">View Course Charts in\t</string>
+    <string name="btn_adapter_recycleview">Course Charts in \t</string>
+    <string name="tv_adapter_recycleview_content"><![CDATA[We recommend keeping up your grades in these course tracks: English, Political Science & Forensics,and History & Social Sciences.]]></string>
+    <string name="tv_coursemainfragment_title_desp_singular">%s class</string>
+    <string name="tv_coursemainfragment_title_desp_">%s classese</string>
+
+
+    <string name="tv_bsdf_addcourse_title">Add Course</string>
+    <string name="et_bsdf_addcourse_track">Select subject track</string>
+    <string name="tv_bsdf_addcourse_track">Course Track</string>
+    <string name="et_bsdf_addcourse_name">Enter course name</string>
+    <string name="tv_bsdf_addcourse_level">Course Level</string>
+    <string name="et_bsdf_addcourse_level">Select course level</string>
+    <string name="tv_bsdf_addcourse_grade">Course Grade</string>
+    <string name="et_bsdf_addcourse_grade">Enter grade</string>
+    <string name="tv_bsdf_addcourse_name">Course Name</string>
+    <string name="btn_bsdf_addcourse_done">Add</string>
+    <string name="tv_bsdf_addcourse_grade_level">Grade Level(s)</string>
+    <string name="grade_levle_9">Grade 9</string>
+    <string name="grade_levle_10">Grade 10</string>
+    <string name="grade_levle_11">Grade 11</string>
+    <string name="grade_levle_12">Grade 12</string>
+    <string name="tv_bsdf_addscoreyear_title">Add GPA for the School Year</string>
+    <string name="tv_bsdf_addscoreyear_title_edit">Edit Score for the School Year</string>
+    <string name="tv_bsdf_addscoreyear_grade_level">Grade Level(s)</string>
+    <string name="et_bsdf_addscoreyear_grade_hint">Enter grade</string>
+    <string name="et_bsdf_addscoreyear_score_max_hint">/5.0</string>
+    <string name="btn_bsdf_addscoreyear_add">Add</string>
+    <string name="tv_bsdf_addscoreyear_grade">Grade</string>
+    <string name="et_bsdf_addicactivity_position_hint">Enter position / leadership description</string>
+    <string name="tv_bsdf_addicactivity_position">Position / Leadership Description</string>
+    <string name="tv_bsdf_addicactivity_title">Add Activity</string>
+    <string name="tv_bsdf_addicactivity_role_leader">Leader / President</string>
+    <string name="tv_bsdf_addicactivity_role_member">Member / Participant</string>
+    <string name="et_bsdf_addicactivity_name_hint">Enter organization name</string>
+    <string name="tv_bsdf_addicactivity_grade_level">Participation Grade Level(s)</string>
+    <string name="tv_bsdf_addicactivity_role">Your Role</string>
+    <string name="tv_bsdf_addicactivity_name">Organization Name</string>
+    <string name="tv_bsdf_addicactivity_type">Activity Type</string>
+    <string name="et_bsdf_addicactivity_type_hint">Select Activity Type</string>
+    <string name="tv_bsdf_addicactivity_hours">Hours Spent Per Week</string>
+    <string name="tv_bsdf_addicactivity_weeks">Weeks Spent Per Year</string>
+    <string name="et_bsdf_addicactivity_hours_hint">Enter number of hours</string>
+    <string name="et_bsdf_addicactivity_weeks_hint">Enter number of weeks</string>
+    <string name="tv_bsdf_addicactivity_description_content_hint">Please describe this activity, including what you accomplished and any\n recognition you received, etc. (Max characters: 150)</string>
+    <string name="tv_bsdf_addicactivity_description">Description (Optional)</string>
+    <string name="et_bsdf_addicactivity_description_hint">Enter activity description</string>
+
+
+    <string name="btn_bsdf_addicactivity_add">Add</string>
+    <string name="tv_bsdf_addciactivity_title">Add Activity</string>
+    <string name="tv_bsdf_addciactivity_title_edit">Edit Activity</string>
+    <string name="tv_bsdf_addciactivity_position">Position / Leadership Description</string>
+    <string name="et_bsdf_addciactivity_position_hint">Enter position / leadership description</string>
+    <string name="tv_bsdf_addciactivity_role">Your Role</string>
+    <string name="tv_bsdf_addciactivity_role_leader">Leader / President</string>
+    <string name="tv_bsdf_addciactivity_role_member">Member / Participant</string>
+    <string name="tv_bsdf_addciactivity_name">Organization Name</string>
+    <string name="et_bsdf_addciactivity_name_hint">Enter organization name</string>
+    <string name="tv_bsdf_addciactivity_grade_level">Participation Grade Level(s)</string>
+    <string name="tv_bsdf_addciactivity_type_notinternational">Non-international</string>
+    <string name="tv_bsdf_addciactivity_type_international">International</string>
+    <string name="tv_bsdf_addciactivity_type">Organization Type</string>
+    <string name="tv_bsdf_addciactivity_hours_unit">hrs</string>
+    <string name="tv_bsdf_addciactivity_hours">Hours spent per week</string>
+    <string name="tv_bsdf_addciactivity_perhour">1 hours per week</string>
+    <string name="tv_bsdf_addciactivity_perhours">%s hours per week</string>
+    <string name="tv_bsdf_addciactivity_perweek">, 1 week per year</string>
+    <string name="tv_bsdf_addciactivity_perweeks">, %s weeks per year</string>
+
+
+
+
+
+    <string name="tv_bsdf_addciactivity_weeks">Weeks spent per year</string>
+    <string name="et_bsdf_addciactivity_weeks_hint">Enter number of weeks</string>
+    <string name="et_bsdf_addciactivity_hours_hint">Enter number of hours</string>
+    <string name="tv_bsdf_addciactivity_description">Description (Optional)</string>
+    <string name="tv_bsdf_addciactivity_description_content_hint">Please describe this activity, including what you accomplished and any recognition you received, etc. (Max characters: 150)</string>
+    <string name="et_bsdf_addciactivity_description_hint">Enter activity description</string>
+    <string name="btn_bsdf_addciactivity_add">Add</string>
+    <string name="btn_bsdf_addciactivity_done">Done</string>
+
+
+    <string name="tv_bsdf_addhonors_title"><![CDATA[Add Honors & Award]]></string>
+    <string name="tv_bsdf_addhonors_name">Honors / Award Title</string>
+    <string name="et_bsdf_addhonors_name_hint">Enter honors / award title</string>
+    <string name="tv_bsdf_addhonors_type">Honors / Award Type</string>
+    <string name="et_bsdf_addhonors_type_hint">Select from the  following options</string>
+
+    <string name="et_bsdf_addhonors_type_competion">Competition</string>
+    <string name="et_bsdf_addhonors_type_certificate">Certificate</string>
+    <string name="et_bsdf_addhonors_type_research">Research</string>
+
+
+    <string-array name="array_honors_type">
+        <item>@string/et_bsdf_addhonors_type_competion</item>
+        <item>@string/et_bsdf_addhonors_type_certificate</item>
+        <item>@string/et_bsdf_addhonors_type_research</item>
+    </string-array>
+
+    <string name="et_bsdf_addhonors_type_research_sci">SCI / SSCI</string>
+    <string name="et_bsdf_addhonors_type_research_journal">International Journal</string>
+    <string name="et_bsdf_addhonors_type_research_conference">International Conference</string>
+    <string name="et_bsdf_addhonors_type_research_sturdent">Student Journal</string>
+    <string name="et_bsdf_addhonors_type_research_self">Self Research</string>
+
+    <string-array name="array_honors_research_type">
+        <item>@string/et_bsdf_addhonors_type_research_sci</item>
+        <item>@string/et_bsdf_addhonors_type_research_journal</item>
+        <item>@string/et_bsdf_addhonors_type_research_conference</item>
+        <item>@string/et_bsdf_addhonors_type_research_sturdent</item>
+        <item>@string/et_bsdf_addhonors_type_research_self</item>
+    </string-array>
+
+    <string name="tv_bsdf_addhonors_rank">Rank / Prize</string>
+    <string name="tv_bsdf_addhonors_rank_first">First Place</string>
+    <string name="tv_bsdf_addhonors_rank_second">Second Place</string>
+    <string name="tv_bsdf_addhonors_rank_third">Third Place</string>
+    <string name="tv_bsdf_addhonors_rank_other">Others</string>
+
+    <string-array name="array_honors_rank">
+        <item>@string/tv_bsdf_addhonors_rank_first</item>
+        <item>@string/tv_bsdf_addhonors_rank_second</item>
+        <item>@string/tv_bsdf_addhonors_rank_third</item>
+        <item>@string/tv_bsdf_addhonors_rank_other</item>
+    </string-array>
+
+    <string name="tv_bsdf_addhonors_researchtype">Research Type</string>
+    <string name="et_bsdf_addhonors_researchtype_hint">Select from the  following options</string>
+    <string name="tv_bsdf_addhonors_grade_level">Participation Grade Level(s)</string>
+    <string name="tv_bsdf_addhonors_recognition">Level(s) of Recognition</string>
+    <string name="tv_bsdf_addhonors_recognition_school">School</string>
+    <string name="tv_bsdf_addhonors_recognition_state">State / Regional</string>
+    <string name="tv_bsdf_addhonors_recognition_national">National</string>
+    <string name="tv_bsdf_addhonors_recognition_international">International</string>
+
+    <string-array name="array_honors_recognition">
+        <item>@string/tv_bsdf_addhonors_recognition_school</item>
+        <item>@string/tv_bsdf_addhonors_recognition_state</item>
+        <item>@string/tv_bsdf_addhonors_recognition_national</item>
+        <item>@string/tv_bsdf_addhonors_recognition_international</item>
+    </string-array>
+
+    <string name="btn_bsdf_addhonors_add">Add</string>
+    <string name="et_bsdf_editname_first_hint">First Name</string>
+    <string name="et_bsdf_editname_last_hint">Last Name</string>
+    <string name="btn_bsdf_editname_save">Save Changes</string>
+    <string name="et_bsdf_editpassword_current">Current Password</string>
+    <string name="et_bsdf_editpassword_new">New Password</string>
+    <string name="iv_bsdf_editpassword_new_remove">Confirm New Password</string>
+    <string name="btn_bsdf_editpassword_save">Save Changes</string>
+    <string name="btn_bsdf_editarrayitem_save">Save Changes</string>
+    <string name="et_bsdf_editarrayitem_item">Select from the  following options</string>
+    <string name="btn_bsdf_attention_cancel">Cancel</string>
+    <string name="btn_bsdf_attention_delete">Delete Account</string>
+    <string name="tv_bsdf_attention_name">This action will delete your personal data and your account from Admitted forever. Please note that you need to cancel your Admitted subscription separately if you chose to delete your account. Your are very welcome to create a new account at any time.</string>
+    <string name="tv_bsdf_attention_title">Attention</string>
+
+
+    <string-array name="array_grade_title">
+        <item>Grade 9</item>
+        <item>Grade 10</item>
+        <item>Grade 11</item>
+        <item>Grade 12</item>
+    </string-array>
+
+    <string name="course_track_courses">%d Courses</string>
+    <string name="course_track_english">English</string>
+    <string name="course_track_english_tit">Courses in English Track</string>
+    <string name="course_track_english_chart">English Course Chart</string>
+    <string name="course_track_Political">Political Science &amp; Forensics</string>
+    <string name="course_track_Political_tit">Courses in Political Science &amp; Forensics Track</string>
+    <string name="course_track_Political_chart">Political Science &amp; Forensics Course Chart</string>
+    <string name="course_track_history">History &amp; Social Studies </string>
+    <string name="course_track_history_tit">Courses in History &amp; Social Studies Track</string>
+    <string name="course_track_history_chart">History &amp; Social Studies Course Chart</string>
+    <string name="course_track_history_business_chart">Business Course Chart</string>
+    <string name="course_track_math">Mathematics</string>
+    <string name="course_track_math_tit">Courses in Mathematics Track</string>
+    <string name="course_track_math_chart">Mathematics Course Chart</string>
+    <string name="course_track_math_ib">IB Mathematics Course Chart</string>
+    <string name="course_track_computer">Computer Science &amp; Robotics</string>
+    <string name="course_track_computer_tit">Courses in Computer Science &amp; Robotics Track</string>
+    <string name="course_track_computer_chart">Computer Science &amp; Robotics Course Chart</string>
+    <string name="course_track_science">Science</string>
+    <string name="course_track_science_tit">Courses in Science Track</string>
+    <string name="course_track_science_chart">Science Course Chart</string>
+    <string name="course_track_science_scientific_chart">Scientific Research Course Chart</string>
+    <string name="course_track_worldlan">World Languages</string>
+    <string name="course_track_worldlan_tit">Courses in World Languages Track</string>
+    <string name="course_track_worldlan_mandarin">Ｍandarin Course Chart</string>
+    <string name="course_track_worldlan_japanese">Japanese Course Chart</string>
+    <string name="course_track_worldlan_spanish">Spanish Course Chart</string>
+    <string name="course_track_classics">Classics</string>
+    <string name="course_track_classics_tit">Courses in Classics Track</string>
+    <string name="course_track_classics_chart">Classics Course Chart</string>
+    <string name="course_track_performingarts">Performing Arts</string>
+    <string name="course_track_performingarts_tit">Courses in Performing Arts Track</string>
+    <string name="course_track_performingarts_music_chart">Music Course Chart</string>
+    <string name="course_track_performingarts_dance_chart">Dance Course Chart</string>
+    <string name="course_track_performingarts_theater_chart">Theater Course Chart</string>
+    <string name="course_track_visual">Visual Arts</string>
+    <string name="course_track_visual_tit">Courses in Visual Arts Track</string>
+    <string name="course_track_visual_chart">Visual Arts Course Chart</string>
+    <string name="course_track_health">Health &amp; Physical Education</string>
+    <string name="course_track_health_tit">Courses in Health &amp; Physical Education Track</string>
+    <string name="course_track_health_chart">Health &amp; Physical Education Course Chart</string>
+    <string-array name="array_course_track">
+        <item>@string/course_track_english</item>
+        <item>@string/course_track_Political</item>
+        <item>@string/course_track_history</item>
+        <item>@string/course_track_math</item>
+        <item>@string/course_track_computer</item>
+        <item>@string/course_track_science</item>
+        <item>@string/course_track_worldlan</item>
+        <item>@string/course_track_classics</item>
+        <item>@string/course_track_performingarts</item>
+        <item>@string/course_track_visual</item>
+        <item>@string/course_track_health</item>
+    </string-array>
+
+    <string-array name="array_course_level">
+        <item>Regular</item>h
+        <item>Honors</item>
+        <item>AP</item>
+        <item>IB</item>
+    </string-array>
+    <string-array name="array_icactivity_type">
+        <item>Academic</item>
+        <item>Art</item>
+        <item>Athletics: Club</item>
+        <item>Athletics: JV / Varsity</item>
+        <item>Career Oriented</item>
+        <item>Internship</item>
+        <item>Journalism / Publication</item>
+    </string-array>
+
+    <string name="interest_math">Math</string>
+    <string name="interest_life_sciences">Life Sciences</string>
+    <string name="interest_engineering">Engineering</string>
+    <string name="interest_socia_sciencesl">Social Sciences</string>
+    <string name="interest_literature">Literature</string>
+    <string name="interest_business">Business</string>
+    <string name="interest_art">Art</string>
+    <string-array name="array_interest">
+        <item>@string/interest_math</item>
+        <item>@string/interest_life_sciences</item>
+        <item>@string/interest_engineering</item>
+        <item>@string/interest_socia_sciencesl</item>
+        <item>@string/interest_literature</item>
+        <item>@string/interest_business</item>
+        <item>@string/interest_art</item>
+    </string-array>
+
+    <string-array name="array_applystatus">
+        <item>Applying</item>
+        <item>Applied</item>
+        <item>Waitlisted</item>
+        <item>Accepted</item>
+        <item>Rejected</item>
+        <item>Enrolled</item>
+    </string-array>
+
+    <string-array name="array_application_gpa_title">
+        <item>Academic Performance - Excellent</item>
+        <item>Academic Performance - Good</item>
+        <item>Academic Performance - Average</item>
+        <item>Academic Performance - Below Average</item>
+        <item>Academic Performance - Poor</item>
+    </string-array>
+    <string-array name="array_application_gpa_content">
+        <item>Your Academic Performance is excellent for this school.</item>
+        <item>Your Academic Performance is above average for this school.</item>
+        <item>Your Academic Performance is average for this school.</item>
+        <item>Your Academic Performance is below average for this school.</item>
+        <item>Your Academic Performance is poor for this school.</item>
+    </string-array>
+    <string-array name="array_application_gpa_level">
+        <item> GPA - Excellent</item>
+        <item> GPA - Above Average</item>
+        <item> GPA - Average</item>
+        <item> GPA - Below Average</item>
+        <item> GPA - Low</item>
+    </string-array>
+    <string-array name="array_application_gpa_advice">
+        <item>You are extraordinary! Keep up the good work.</item>
+        <item>You are doing great! Give yourself a little push and you will reach excellence in no time.</item>
+        <item></item>
+        <item>You are a bit behind. Here’s what you can do: 1.) Check and see if your course selections are overloaded. 2.) Reach out for help immediately on subjects you do not fully comprehend. 3.) Put your best effort into assignments and projects that interest you AND give you the biggest advantage on your grades.</item>
+        <item>Try setting up a meeting with your counselor and rearranging your curriculum. Take it one step at a time and focus on the quality of your daily tasks and assignments. You will make it happen. Do not give up!</item>
+    </string-array>
+
+    <string-array name="array_application_">
+        <item></item>
+    </string-array>
+
+    <string-array name="array_application_ic_title">
+        <item>Intellectual Curiosity - You’re killing it!</item>
+        <item>Intellectual Curiosity - Keep up the good work</item>
+        <item>Intellectual Curiosity - You are doing just fine</item>
+        <item>Intellectual Curiosity - Give yourself a push</item>
+        <item>Intellectual Curiosity - You can do better</item>
+    </string-array>
+    <string-array name="array_application_ic_content">
+        <item>Your performance in Intellectual Curiosity is excellent for this school.</item>
+        <item>Your performance in Intellectual Curiosity is above average for this school.</item>
+        <item>Your performance in Intellectual Curiosity is average for this school.</item>
+        <item>Your performance in Intellectual Curiosity is below average for this school.</item>
+        <item>Your performance in Intellectual Curiosity is poor for this school.</item>
+    </string-array>
+    <string-array name="array_application_ic_advice">
+        <item>Looks like you have accumulated an amazing list of academic activities. Keep it up!</item>
+        <item>Great work! At this point, you should have the following under your belt: 1.) 1-2 club experiences. 2.) 1-2 online course certificates. 3.) summer or winter camp activities. 4.) 1-2 internships.</item>
+        <item>School clubs are great, but Coursera courses are just as cool 😎. Try taking some of the courses that interest you, or summer and winter camps that\'s related to an academic area that your are curious about.</item>
+        <item>Try taking 1-2 courses with certification that interest you on Coursera if you have been in 1-2 academic-related clubs already. The key is to deepen your understanding in subject areas that pique your interest.</item>
+        <item>Your are a bit behind on your academic activities (extracurricular), but no worries. Here’s what you can do: start exploring school clubs that related to an academic area you are interested in. Try joining 1-2 of them and see how it goes. You got this 👌</item>
+    </string-array>
+    <string-array name="array_application_ci_title">
+        <item>Community Impact - You’re killing it!</item>
+        <item>Community Impact - Keep up the good work</item>
+        <item>Community Impact - You are doing just fine</item>
+        <item>Community Impact - Give yourself a push</item>
+        <item>Community Impact - You can do better</item>
+    </string-array>
+    <string-array name="array_application_ci_content">
+        <item>Your performance in Community Impact is excellent for this school.</item>
+        <item>Your performance in Community Impact is above average for this school.</item>
+        <item>Your performance in Community Impact is average for this school.</item>
+        <item>Your performance in Community Impact is below average for this school.</item>
+        <item>Your performance in Community Impact is poor for this school.</item>
+    </string-array>
+    <string-array name="array_application_ci_advice">
+        <item>Your community is lucky to have you, keep up the good work!</item>
+        <item>Looks like you’ve been a vital member in your community. Keep in mind that the hours you put in are not the only factor that matters. Try visiting your community from time to time and follow up to see how you can help out in any way.</item>
+        <item>Try brainstorming ways to help out a community that you identify with. You could start a club on .... The ideas are endless!</item>
+        <item>Now that you\'ve tried out some volunteer work, are there any topics or communities you feel strongly about? Make sure to contribute to it on a regular basis. Pay them a visit, spend time with the people there from time to time.</item>
+        <item>Looks like you have a long way to go. Here’s how you can start; Try looking out for school clubs that do community service. Join 1-2 of them and see how it goes.</item>
+    </string-array>
+    <string-array name="array_application_honor_title">
+        <item>Honors &amp; Awards - You’re killing it!</item>
+        <item>Honors &amp; Awards - Keep up the good work</item>
+        <item>Honors &amp; Awards - You are doing just fine</item>
+        <item>Honors &amp; Awards - Give yourself a push</item>
+        <item>Honors &amp; Awards - You can do better</item>
+    </string-array>
+    <string-array name="array_application_honor_content">
+        <item>Your performance in Honors &amp; Awards is excellent for this school.</item>
+        <item>Your performance in Honors &amp; Awards is above average for this school.</item>
+        <item>Your performance in Honors &amp; Awards is average for this school.</item>
+        <item>Your performance in Honors &amp; Awards is below average for this school.</item>
+        <item>Your performance in Honors &amp; Awards is poor for this school.</item>
+    </string-array>
+    <string-array name="array_application_honor_advice">
+        <item>You are killing it! Keep up the good work and finish strong.</item>
+        <item>You are doing great! Try leveling up your performance by competing on a larger scale. A regional champion? Superb! Let’s see if you could go national, or better yet,  international 😎.</item>
+        <item>Try participating in academic-related competitions that you find interesting. Look up competitions and challenges online, or ask around in your community.</item>
+        <item>Is there anything you’re proud of or good at? Try participating in a competition or a fun challenge. The sky is the limit.</item>
+        <item>Looks like you have a l`ong way to go. Start by exploring school clubs that relate to an academic area you are interested in. Try joining 1-2 clubs and see how it goes.</item>
+    </string-array>
+
+    <string-array name="array_application_test_title">
+        <item>Standardized Tests - Excellent</item>
+        <item>Standardized Tests - Above Average</item>
+        <item>Standardized Tests - Average</item>
+        <item>Standardized Tests - Below Average</item>
+        <item>Standardized Tests - Poor</item>
+    </string-array>
+    <string-array name="array_application_test_content">
+        <item>Your performance in Standardized Tests is excellent for this school</item>
+        <item>Your performance in Standardized Tests is above average for this school.</item>
+        <item>Your performance in Standardized Tests is  average for this school.</item>
+        <item>Your performance in Standardized Tests is below average for this school.</item>
+        <item>Your performance in Standardized Tests is poor for this school.</item>
+    </string-array>
+
+    <string-array name="array_application_test_sat_content">
+        <item>Congratulationss, you\'ve done a wonderful job on the exam!</item>
+        <item>Nice try! Try leveling up your score with more practice, and watch out for patterns behind each mistake.</item>
+        <item>Looks like you comprehend the majority of the test. Let\'s focus on revising the mistakes in your practice exams and reaching out for help when necessary.</item>
+        <item>Congratulations on taking the test! Give yourself some credit and cheer up. Try taking it one step at a time, focusing on one subject, improving it, and moving on to the next. Be patient and you will see improvements over time. By the way, don\'t ever hesitate to ask those around you for help!</item>
+        <item>Now you have experienced what SAT is like, let\'s get started on preparing for the exam. Practice is key, and look up on test-taking strategies. Pick a strategy and implement it during the exam. See how that goes and make adjustments accordingly.</item>
+    </string-array>
+
+    <string-array name="array_application_test_act_content">
+        <item>Congratulations, you\'ve done a wonderful job on the exam!</item>
+        <item>Nice try! Try leveling up your score with more practice, and watch out for patterns behind each mistake.</item>
+        <item>Looks like you comprehend the majority of the test. Let\'s focus on revising the mistakes in your practice exams and reaching out for help when necessary.</item>
+        <item>Congratulations on taking the test! Give yourself some credit and cheer up. Try taking it one step at a time, focusing on one subject, improving it, and moving on to the next. Be patient and you will see improvements over time. By the way, don\'t ever hesitate to ask those around you for help!</item>
+        <item>Now you have experienced what SAT is like, let\'s get started on preparing for the exam. Practice is key, and look up on test-taking strategies. Pick a strategy and implement it during the exam. See how that goes and make adjustments accordingly.</item>
+    </string-array>
+    <string-array name="array_application_test_ap_content">
+        <item>Congratulations on achieving the full score! Depending on each university’s credit policy, you may waive college credits.</item>
+        <item>Great job on teaching a good exam result. If you encounter problems with concepts, try working through several practices and discuss them with your teacher for feedback. This will solidify your knowledge and better prepare you for college coursework.</item>
+        <item>Figure out your mistakes from mock exams and make sure you comprehend them throughly. Try going over similar questions weekly.</item>
+        <item>You will need more practice and try to get the free AP mocks online and ask your teacher for help.</item>
+        <item>You will need more practice and try to get the free AP mocks online and ask your teacher for help.</item>
+
+    </string-array>
+    <string-array name="array_application_test_toefl_content">
+        <item>Congratulations, You’ve mastered this exam! Make sure this was taken within two years prior to your college enrollment date.</item>
+        <item>Amazing! Try keeping your score in every category above 25, and you will see improvements in no time.</item>
+        <item>Looks like you need a good strategy to score higher on your next exam. Search up on test-taking strategies for TOEFL and implement one of them during a mock exam. See how that goes and make adjustments accordingly.</item>
+        <item>Try leveling up your overall proficiency by asking your teachers to review your writing , or go through a mock speaking exam with your fellow classmates.</item>
+        <item>Start by reading and listing parts of the test. Try memorizing 20-30 vocabulary a day and do a practice test every week.</item>
+    </string-array>
+    <string-array name="array_application_test_ielts_content">
+        <item>Congratulations, You’ve mastered this exam! Make sure this was taken within two years prior to your college enrollment date.</item>
+        <item>Amazing! Try keeping your score in every category above 7.5, and you will see improvements in no time.</item>
+        <item>Looks like you need a good strategy to score higher on your next exam. Search up on test-taking strategies for IELTS and implement one of them during a mock exam. See how that goes and make adjustments accordingly.</item>
+        <item>Try leveling up your overall proficiency by asking your teachers to review your writing , or go through a mock speaking exam with your fellow classmates.</item>
+        <item>Start by reading and listing parts of the test. Try memorizing 20-30 vocabulary a day and do a practice test every week.</item>
+    </string-array>
+    <string-array name="array_application_test_ib_content">
+        <item>Congratulations on completing your IB exam! Depending on each university\'s credit policy, you may waive college credits.</item>
+    </string-array>
+    <string-array name="array_application_test_duolingo_content">
+        <item>Congratulations, you\'ve done a wonderful job on the exam!</item>
+        <item>Amazing! Keep practicing and you will see improvements in no time.</item>
+        <item>Start by practicing the reading and listening parts of the test every week.</item>
+    </string-array>
+    <string-array name="array_application_test_toefl_alternate_content">
+        <item>Congratulations, You’ve mastered this exam! Make sure this was taken within two years prior to your college enrollment date.</item>
+        <item>Amazing! Keep practicing and you will see improvements in no time.</item>
+        <item>Looks like you need a good strategy to score higher on your next exam.</item>
+        <item>Start by practicing the reading and listening parts of the test every week.</item>
+    </string-array>
+    <string-array name="array_apsubjectt">
+        <item>AP Art History</item>
+        <item>AP Biology</item>
+        <item>AP Calculus AB</item>
+        <item>AP Calculus BC</item>
+        <item>AP Chemistry</item>
+        <item>AP Chinese Language &amp; Culture</item>
+        <item>AP Comparative Government &amp; Politics</item>
+        <item>AP Computer Science A</item>
+        <item>AP Computer Science Principles</item>
+        <item>AP English Language and Composition</item>
+        <item>AP English Literature and Composition</item>
+        <item>AP Environmental Science</item>
+        <item>AP European History</item>
+        <item>AP French Language &amp; Culture</item>
+        <item>AP German Language &amp; Culture</item>
+        <item>AP Human Geography</item>
+        <item>AP Italian Language &amp; Culture</item>
+        <item>AP Japanese Language and Culture</item>
+        <item>AP Latin</item>
+        <item>AP Macroeconomics</item>
+        <item>AP Microeconomics</item>
+        <item>AP Music Theory</item>
+        <item>AP Physics 1: Algebra-Based</item>
+        <item>AP Physics 2: Algebra-Based</item>
+        <item>AP Physics C: Electricity &amp; Magnetism</item>
+        <item>AP Physics C: Mechanics</item>
+        <item>AP Psychology</item>
+        <item>AP Research</item>
+        <item>AP Seminar</item>
+        <item>AP Spanish Language &amp; Culture</item>
+        <item>AP Spanish Literature &amp; Culture</item>
+        <item>AP Statistics</item>
+        <item>AP Studio Art: 2-D Design</item>
+        <item>AP Studio Art: 3-D Design</item>
+        <item>AP Studio Art: Drawing</item>
+        <item>AP U.S. Government &amp; Politics</item>
+        <item>AP U.S. History</item>
+        <item>AP World History</item>
+    </string-array>
+    <string-array name="array_ibsubject">
+        <item>IB English A: Literature HL</item>
+        <item>IB English A: Literature SL</item>
+        <item>IB English A: Language and Literature HL</item>
+        <item>IB English A: Language and Literature SL</item>
+        <item>IB English B HL</item>
+        <item>IB English B SL</item>
+        <item>IB Spanish B HL</item>
+        <item>IB Spanish B SL</item>
+        <item>IB French B HL</item>
+        <item>IB French B SL</item>
+        <item>IB Mandarin B HL</item>
+        <item>IB Mandarin B SL</item>
+        <item>IB German B HL</item>
+        <item>IB German B SL</item>
+        <item>IB Spanish ab initio SL</item>
+        <item>IB French ab initio SL</item>
+        <item>IB Mandarin ab initio SL</item>
+        <item>IB Business Management HL</item>
+        <item>IB Business Management SL</item>
+        <item>IB Economics HL</item>
+        <item>IB Economics SL</item>
+        <item>IB Geography HL</item>
+        <item>IB Geography SL</item>
+        <item>IB Global Politics HL</item>
+        <item>IB Global Politics SL</item>
+        <item>IB History HL</item>
+        <item>IB History SL</item>
+        <item>IB Philosophy HL</item>
+        <item>IB Philosophy SL</item>
+        <item>IB Psychology HL</item>
+        <item>IB Psychology SL</item>
+        <item>IB Biology HL</item>
+        <item>IB Biology SL</item>
+        <item>IB Chemistry HL</item>
+        <item>IB Chemistry SL</item>
+        <item>IB Computer Science HL</item>
+        <item>IB Computer Science SL</item>
+        <item>IB Design Technology HL</item>
+        <item>IB Design Technology SL</item>
+        <item>IB Environmental Systems and Societies SL</item>
+        <item>IB Physics HL</item>
+        <item>IB Physics SL</item>
+        <item>IB Sports, Exercise and Health Science HL</item>
+        <item>IB Sports, Exercise and Health Science SL</item>
+        <item>IB Mathematics: Analysis and Approaches HL</item>
+        <item>IB Mathematics: Analysis and Approaches SL</item>
+        <item>IB Mathematics: Applications and Interpretation HL</item>
+        <item>IB Mathematics: Applications and Interpretation SL</item>
+        <item>IB Dance HL</item>
+        <item>IB Dance SL</item>
+        <item>IB Film HL</item>
+        <item>IB Film SL</item>
+        <item>IB Music HL</item>
+        <item>IB Music SL</item>
+        <item>IB Theatre HL</item>
+        <item>IB Theatre SL</item>
+        <item>IB Visual Arts HL</item>
+        <item>IB Visual Arts SL</item>
+    </string-array>
+
+    <string-array name="array_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="title_activity_test">TestActivity</string>
+    <string name="tab_roadmap">Roadmap</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tv_cimainfragment_title">Community Impact</string>
+    <string name="tv_cimainfragment_title_desp">%s activities • %s hours</string>
+    <string name="tv_cimainfragment_title_desp_singular">%s activity • %s hours</string>
+    <string name="tv_cimainfragment_empty">You haven’t added any activities yet</string>
+    <string name="tv_cimainfragment_resource">Extracurricular Resources Near You</string>
+    <string name="tv_cimainfragment_resource_view">View All Resources</string>
+    <string name="tv_cimainfragment_add">Add Activity</string>
+    <string name="tv_cimainfragment_activities">Activities</string>
+    <string name="tv_cimainfragment_back">Back</string>
+    <string name="tv_apmainfragment_recommend_content">We asked you which areas you are interested in pursuing, each area corresponds to one or more course tracks. We recommend focusing on these specific course tracks if you want to pursue the area in college.</string>
+    <string name="tv_apmainfragment_courses">Courses</string>
+    <string name="tv_apmainfragment_title">Academic Performance</string>
+    <string name="tv_apmainfragment_back">Back</string>
+    <string name="tv_apmainfragment_empty">You haven’t added any academic grades yet</string>
+    <string name="tv_apmainfragment_recommend_title">Course Selection Recommendation</string>
+    <string name="tv_apmainfragment_add">Add Course</string>
+    <string name="tv_testmainfragment_title">Standardized Tests</string>
+    <string name="tv_testmainfragment_add">Add Tests</string>
+    <string name="tv_testmainfragment_empty">You haven’t added any standardized tests yet</string>
+    <string name="tv_testmainfragment_tests">Tests Taken</string>
+    <string name="tv_testmainfragment_back">Back</string>
+    <string name="tv_honorsmainfragment_honors">Honors / Awards</string>
+    <string name="tv_honorsmainfragment_title_desp">%s entries</string>
+    <string name="tv_honorsmainfragment_title_desp_singular">%s entry</string>
+    <string name="tv_honorsmainfragment_back">Back</string>
+    <string name="tv_honorsmainfragment_empty">You haven’t added any honors / awards yet</string>
+    <string name="tv_honorsmainfragment_add">Add Honors / Awards</string>
+    <string name="tv_apmainfragment_year_add">Add GPA for the School Year</string>
+    <string name="tv_dialogfragmentadded_title">Well done, %s!</string>
+    <string name="tv_applciationcollege_prearrival_newstudent_content">New student orientation on campus usually lasts several days. Some schools require all students to attend, while others make it optional for international students, arranging online sessions for them in advance instead.</string>
+    <string name="tv_applciationcollege_prearrival_newstudent_content_can">Orientations are typically scheduled in the week before the start of class for Canadian universities——around late August or early September of the academic year. At the University of Toronto, orientation is mostly optional; for other schools, however, orientation may be mandatory. Therefore, it is important to check your email inbox and factor the orientation date into your travel plan.</string>
+    <string name="tv_applciationcollege_prearrival_newstudent_content_uk">Orientations on campus usually last several days. Some schools require all students to attend, while others make it optional for international students, offering online sessions instead. Failure to register for a mandatory orientation may affect your course selection eligibility, so be sure to check the school’s instructions. As for optional orientations, simply sign up before the deadline.</string>
+    <string name="tv_applciationcollege_prearrival_housing_content">After your enrollment at the university, remember to apply for a dormitory according to the schedule announced by the school and submit the deposit before the deadline. There are multiple dormitories on campus, and the room types may vary slightly. It is recommended to check the school\'s Housing website for floor plans or search for real footage on YouTube.</string>
+    <string name="tv_applciationcollege_prearrival_housing_content_can">Most Canadian universities offer on-campus housing to first year students, but the deadline for dorm application may vary, and some schools require an application fee. Make sure to check with your school’s policy for on-campus dorm selection and application.</string>
+    <string name="tv_applciationcollege_prearrival_housing_content_en">There are multiple dormitories on campus, and the room types may vary slightly. It is recommended to check the school’s Accommodation website for floor plans or search for room tour footages on YouTube.
+When filling out the dormitory preferences, you could choose whether to live with friends. If so, make sure to include your friends’ Student ID and ensure that your preference rankings are consistent. The school will make arrangements accordingly, although results are not guaranteed.</string>
+    <string name="tv_applciationcollege_international_bankacoount_content">To open an account, you will need to bring your passport, visa, I-20, a second form of identification with an English name (Ex. University student ID, English version of the household registration, international driver\'s license), and cash. Common banks for international students include Chase Bank, Bank of America, American Bank, Wells Fargo, Capital One, and Citi Bank.</string>
+    <string name="tv_applciationcollege_international_bankacoount_content_can">TD, RBC, CIBC, Scotiabank, and BMO are the most commonly used banks for international students in Canada, all of which offer an opening discount for college students, with TD and RBC being the most common banks across Canada.
+TD Bank and RBC (Royal Bank of Canada) offer a transaction-free package for up to 25 times per month.
+CIBC (Canadian Imperial Bank of Commerce) and Scotiabank offer an unlimited, transaction-free package.
+BMO (Bank of Montreal) offers unlimited transactions that require a CA$ 5 fee.</string>
+    <string name="tv_applciationcollege_international_bankacoount_content_uk">Some of the common banks in the U.K. include HSBC, Barclays, NatWest, Lloyds, TSB, and RBS. Most student accounts function similarly, and no transaction fee is charged between banks. You may visit the bank closest to your school/dormitory to open a bank account.</string>
+    <string name="tv_applciationcollege_international_mobile_content">Each telecom company has different plans, some of which offer student discounts when presented with a university student ID and a passport.</string>
+    <string name="tv_applciationcollege_international_mobile_content_can">Most international students in Canada use Rogers, Bell, Telus, and Fido.
+If you live in the suburb, you may use Rogers, Bell, and Telus as they are the leading phone carriers in Canada and cover wider network areas.
+Fido is quite popular among other phone carriers as it’s the subsidiary company of Rogers’.
+The above services serve international students as long as the individual provides a valid student ID (or certificates that show proof of enrollment) and a photo ID. Look for discounted plans during back-to-school season.</string>
+    <string name="tv_applciationcollege_international_mobile_content_uk">You might want to travel to other European countries during your study in the U.K., and it is important to find a good network provider with excellent roaming services.</string>
+    <string name="tv_applciationcollege_international_academicalendar_content">Universities generally release their Academic Calendar for the upcoming academic year before summer break. When scheduling your travels, it is important to consult the school’s official Academic Calendar to avoid missing important dates, such as the start of class and final exams.</string>
+    <string name="tv_applciationcollege_international_academicalendar_content_can">Universities typically release their Academic Calendar for the upcoming year near the end of spring or during summer. When scheduling for travel, it is important to consult the official Academic Calendar to avoid missing important dates, such as the start of class and final exams.</string>
+    <string name="tv_applciationcollege_international_tuition_content">In the United States, every university requires all students to provide vaccination records before enrollment. Depending on the regulations of each state, the vaccination dates should be filled out on the form provided by the school. Some schools may require the form to be signed by a physician, and to be uploaded to the school’s system along with the required vaccination record.</string>
+    <string name="tv_applciationcollege_international_studentvisa_content">There are 3 main components—I-20 , DS-160, and F-1 Visa—and 5 main steps of a student visa application. The 5 Steps to obtain a student visa include: \n\t‧Request an I-20 from the university. \n\t‧Visit https://www.fmjfee.com to pay \n\t\t\tUS$350 SEVIS fee. \n\t‧Visit https://ceac.state.gov/genniv to fill out \n\t\t\tthe DS-160 form. \n\t‧Visit the website of your local de facto \n\t\t\tEmbassy of the United States of America to \n\t\t\tschedule an interview appointment, or to apply \n\t\t\tfor an Interview Waiver program, if \n\t\t\tapplicable. \n\t‧Visit your local de facto Embassy of \n\t\t\tthe United States of America for an interview. \n\t\t\tIf you are submitting an Interview Waiver \n\t\t\tprogram, mail the requested documents \n\t\t\tto the designated location.</string>
+    <string name="tv_applciationcollege_international_studentvisa_content_can">The Study Permit will remain valid for up to 5 years or until passport expiry (whichever comes first). Check your passport expiration date before applying for a visa. If the remaining validity period of your passport is less than four years, it is recommended that you apply for a new passport first. By doing so, you won’t have to apply for an extension in the future.</string>
+    <string name="tv_applciationcollege_international_studentvisa_content_uk">Before studying abroad in the U.K., students must obtain a Tier 4 General Student Visa. Once you have decided which university to attend, you must confirm enrollment by providing the school with required documents to meet the offering conditions, and paying the deposit fee. The school will then send you a visa document, namely CAS (Confirmation of Acceptance for Studies). You could apply for a U.K. student visa six months before the start of classes at the earliest. We suggest that you apply for a student visa one month prior to the start of classes at the latest so that you have enough time to prepare for departure.</string>
+    <!--  ResetPasswordActivity  -->
+
+    <!--  ResetPasswordActivity  -->
+
+    <string-array name="array_explore_tab">
+        <item>Universities</item>
+        <item>Extracurriculars</item>
+    </string-array>
+    <string-array name="array_application_tab">
+        <item>Applications</item>
+        <item>Timeline</item>
+    </string-array>
+
+    <string name="account_type_time_info">You had a %s subscription plan with us. Subscription expired on %s .\n Subscribed via Google Play. You can manage and cancel your subscription in Google Play.</string>
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_body"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".member.view.activity.BasicInfoActivity">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_basicinfo_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/arrow_left"
+        android:padding="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+
+        app:layout_constraintWidth_percent=".064"
+        app:layout_constraintHeight_percent=".052"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintHorizontal_bias=".043"
+        android:visibility="invisible"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_basicinfo_line1"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="#D6DBE3"
+
+        app:layout_constraintBottom_toBottomOf="@+id/iv_basicinfo_dot1"
+        app:layout_constraintLeft_toRightOf="@+id/iv_basicinfo_dot1"
+        app:layout_constraintRight_toLeftOf="@+id/iv_basicinfo_dot2"
+        app:layout_constraintTop_toTopOf="@+id/iv_basicinfo_dot1"
+        app:layout_constraintVertical_bias=".5"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.002"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp"
+
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_basicinfo_line2"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="#D6DBE3"
+
+        app:layout_constraintBottom_toBottomOf="@+id/iv_basicinfo_dot2"
+        app:layout_constraintLeft_toRightOf="@+id/iv_basicinfo_dot2"
+        app:layout_constraintRight_toLeftOf="@+id/iv_basicinfo_dot3"
+        app:layout_constraintTop_toTopOf="@+id/iv_basicinfo_dot2"
+        app:layout_constraintVertical_bias=".5"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.002"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp"
+
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_basicinfo_line3"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="#D6DBE3"
+
+        app:layout_constraintBottom_toBottomOf="@+id/iv_basicinfo_dot3"
+        app:layout_constraintLeft_toRightOf="@+id/iv_basicinfo_dot3"
+        app:layout_constraintRight_toLeftOf="@+id/iv_basicinfo_dot4"
+        app:layout_constraintTop_toTopOf="@+id/iv_basicinfo_dot3"
+        app:layout_constraintVertical_bias=".5"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.002"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_basicinfo_dot1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/vd_dot_enable"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintWidth_percent=".032"
+        app:layout_constraintVertical_bias=".038"
+        app:layout_constraintHorizontal_bias=".149"
+
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_basicinfo_dot2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/vd_dot_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintWidth_percent=".032"
+        app:layout_constraintVertical_bias=".038"
+        app:layout_constraintHorizontal_bias=".403"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_basicinfo_dot3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/vd_dot_default"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintWidth_percent=".032"
+        app:layout_constraintVertical_bias=".038"
+        app:layout_constraintHorizontal_bias=".656"
+
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_basicinfo_dot4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/vd_dot_default"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintWidth_percent=".032"
+        app:layout_constraintVertical_bias=".038"
+        app:layout_constraintHorizontal_bias=".909"
+
+        />
+
+    <include
+        android:id="@+id/v_basicinfo1"
+        layout="@layout/content_basinfo_1_basic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.673" />
+    <include
+        android:id="@+id/v_basicinfo2"
+        layout="@layout/content_basinfo_2_school"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.673"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/v_basicinfo3"
+        layout="@layout/content_basinfo_3_preference"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.673"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/v_basicinfo4"
+        layout="@layout/content_basinfo_4_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.673"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

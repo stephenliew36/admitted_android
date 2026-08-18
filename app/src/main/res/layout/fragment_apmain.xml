@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".915">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_apmainfragment_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_apmainfragment_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vd_iv_go_back" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_apmainfragment_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="@string/tv_apmainfragment_back"
+                    android:textColor="#3F5D95" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:id="@+id/rl_apmainfragment_card"
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_apmainfragment_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/bg_circle_d6dbe3"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vd_ic_academics" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_apmainfragment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/iv_apmainfragment_icon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_apmainfragment_title"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="@string/tv_apmainfragment_title"
+                        android:textSize="17sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_apmainfragment_title_desp"
+                        style="@style/textRaleway_regular13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_apmainfragment_title"
+                        android:layout_alignParentLeft="true"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        app:autoSizeMaxTextSize="13sp"
+                        app:autoSizeMinTextSize="10sp"
+                        app:autoSizeStepGranularity="1sp"
+                        app:autoSizeTextType="uniform"
+                        android:text="48 classes • 3.8 GPA" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_apmainfragment_test"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="155dp"
+                        android:layout_height="8dp"
+                        android:layout_below="@+id/tv_apmainfragment_title_desp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="13dp"
+                        android:max="100"
+                        android:progress="33"
+                        android:progressDrawable="@drawable/bg_progress" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_apmainfragment_title_pb"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/pb_apmainfragment_test"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_toRightOf="@+id/pb_apmainfragment_test"
+                        android:gravity="center"
+                        android:text="15/100" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_apmainfragment_courses"
+                style="@style/textRalewaybold13spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/tv_apmainfragment_courses"
+                android:textSize="17sp" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_apmainfragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:tabTextColor="#3F5D95"
+                app:tabIndicatorColor="#3F5D95"
+                app:tabIndicatorFullWidth="false"
+                ></com.google.android.material.tabs.TabLayout>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_apmainfragment_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_apmainfragment_empty"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vd_ic_empty_academic_performance" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_apmainfragment_empty"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/tv_apmainfragment_empty"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_pageradapter_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_pageradapter_course_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_pageradapter_course_title"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="GPA for the School Year"
+                        android:textSize="17sp" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_pageradapter_course_percent"
+                        style="@style/textRaleway10spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_pageradapter_course_title"
+                        android:layout_alignLeft="@+id/tv_pageradapter_course_title"
+                        android:contentDescription="@string/gpa_conversion_accessibility"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:text="@string/gpa_conversion_action"
+                        android:textSize="10sp"
+                        android:layout_marginTop="15dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_pageradapter_course_gpa"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="95%"
+
+                        android:textSize="17sp" />
+
+
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="#D6DBE3"
+                    android:visibility="gone"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_pageradapter_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:id="@+id/rl_apmainfragment_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_btn_default"
+                    android:fontFamily="@font/raleway_bold"
+                    android:lineSpacingExtra="3sp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_apmainfragment_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/vd_ic_add_blue"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="@string/tv_apmainfragment_add"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_apmainfragment_year_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_adapteritem_interest"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_btn_default"
+                    android:fontFamily="@font/raleway_bold"
+                    android:lineSpacingExtra="3sp"
+                    android:textAllCaps="false"
+                    android:visibility="invisible"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_apmainfragment_year_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/vd_ic_add_blue"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="@string/tv_apmainfragment_year_add"
+                    android:textAllCaps="false"
+                    android:textColor="#3F5D95"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_apmainfragment_gpa_help"
+                style="@style/textRalewaybold13spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/gpa_conversion_accessibility"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/gpa_conversion_action"
+                android:textColor="#3F5D95" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_apmainfragment_recommend_title"
+                style="@style/textRalewaybold13spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/tv_apmainfragment_recommend_title"
+                android:textSize="17sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_apmainfragment_recommend_content"
+                style="@style/textRaleway_regular13spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tv_apmainfragment_recommend_content"
+                />
+            <com.google.android.material.tabs.TabLayout
+                app:tabMode="scrollable"
+                android:id="@+id/tl_apmainfragment_track"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:tabTextColor="#3F5D95"
+                app:tabIndicatorColor="#3F5D95"
+                app:tabIndicatorFullWidth="false"
+               />
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_apmainfragment_track"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

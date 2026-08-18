@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_select_student_or_parent_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/arrow_left"
+        android:padding="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+
+        app:layout_constraintWidth_percent=".064"
+        app:layout_constraintHeight_percent=".052"
+        app:layout_constraintVertical_bias=".02"
+        app:layout_constraintHorizontal_bias=".043" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_select_student_or_parent_title"
+        android:text="Tell us about you"
+        style="@style/textPopinBold22spC4F5257"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".025" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Are you a student, parent or teacher?"
+        android:textSize="13sp"
+        android:textColor="#4F5257"
+        android:lineSpacingExtra="1sp"
+        android:letterSpacing="0.02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".09"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".9" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".18"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_select_student"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".1"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.4">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_select_student"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tv_select_student"
+                app:layout_constraintDimensionRatio="1:1"
+                android:src="@drawable/ic_student"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:background="#ECBFA9" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_select_student"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="I’m a student"
+                android:textSize="15sp"
+                android:textColor="#4F5257"
+                android:lineSpacingExtra="1sp"
+                android:letterSpacing="0.02"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_select_student" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_select_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".9"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.4">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_select_parent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tv_select_parent"
+                app:layout_constraintDimensionRatio="1:1"
+                android:src="@drawable/ic_parent"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:background="#ECBFA9" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_select_parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="I’m a parent/teacher"
+                android:textSize="15sp"
+                android:textColor="#4F5257"
+                android:lineSpacingExtra="1sp"
+                android:letterSpacing="0.02"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_select_parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_select_student_or_parent_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_default"
+        android:fontFamily="@font/raleway_regular"
+        android:lineSpacingExtra="3sp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".45"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

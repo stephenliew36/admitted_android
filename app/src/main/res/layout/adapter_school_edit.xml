@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:selectableItemBackground"
+    tools:ignore="RtlSymmetry">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_adapter_recycleview_school_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:src="#D6DBE3"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".97"
+        />
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_adapter_recycleview_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:buttonTint="#3F5D95"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".5"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_adapter_recycleview_school_title"
+        style="@style/textRalewaybold13spC4F5257"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom|left"
+        android:paddingLeft="10dp"
+        android:text="University of Michigan, Ann Arbor"
+        android:lines="1"
+        app:layout_constraintVertical_weight=".5"
+        app:layout_constraintBottom_toTopOf="@+id/tv_adapter_recycleview_content"
+        app:layout_constraintLeft_toRightOf="@+id/cb_adapter_recycleview_school"
+        app:layout_constraintRight_toLeftOf="@+id/tv_adapter_recycleview_percent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_adapter_recycleview_content"
+        style="@style/textRaleway_regular13spC4F5257"
+        android:lines="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:text="Seattle, USA ．Private．$80k"
+        android:textColor="#7A8899"
+        app:layout_constraintVertical_weight=".5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/cb_adapter_recycleview_school"
+        app:layout_constraintRight_toLeftOf="@+id/tv_adapter_recycleview_percent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_adapter_recycleview_school_title" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_adapter_recycleview_percent"
+        style="@style/textRalewaybold15spC4F5257"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="80%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintRight_toLeftOf="@+id/iv_adapter_recycleview_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_adapter_recycleview_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vd_ic_arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

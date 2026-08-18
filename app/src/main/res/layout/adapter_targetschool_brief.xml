@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="RtlSymmetry"
+    android:layout_margin="5dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_adapter_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_adapter_school"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="#F2F4F6"
+
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_adapter_targetschool_photo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vd_ic_extracurricular_institution"
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="@+id/iv_adapter_targetschool_photo"
+                app:layout_constraintRight_toRightOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/iv_adapter_targetschool_photo"
+                android:layout_margin="16dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_adapter_targetschool_type"
+                        style="@style/textRalewaybold10spC4F5257"
+                        
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/bg_targetschool_type"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:text=""
+                        android:textColor="#4F5257" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_adapter_targetschool_fav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/vd_ic_favorite_empty" />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_adapter_targetschool_name"
+                    style="@style/textRalewaybold13spC4F5257"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+
+                    android:layout_toLeftOf="@+id/iv_adapter_targetschool_fav"
+                    android:maxLines="3"
+                    android:lines="3"
+                    android:text="University of California, Los Angeles" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_adapter_targetschool_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    style="@style/textRaleway10spC4F5257"
+                    android:layout_margin="5dp"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_adapter_targetschool_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="#E0E0E0"
+                    android:layout_margin="5dp"
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_adapter_targetschool_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_adapter_targetschool_distance"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="1"
+                    android:gravity="center"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_adapter_targetschool_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Add to Applications\t"
+                        android:drawableRight="@drawable/vd_ic_add"
+                        style="@style/textRalewaybold10spC4F5257"
+                        android:textColor="#3F5D95"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

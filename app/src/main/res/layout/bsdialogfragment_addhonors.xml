@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    tools:ignore="RtlSymmetry">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_bsdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_bsdf_addhonors_divider"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:src="#BDBDBD" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bsdf_addhonors_title"
+                style="@style/textRalewaybold17spC4F5257"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tv_bsdf_addhonors_title" />
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_bsdf_addhonors_name"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_bsdf_addhonors_name" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_bsdf_addhonors_name"
+                        style="@style/textRaleway_regular13spC4F5257"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_et_default"
+                        android:cursorVisible="true"
+                        android:hint="@string/et_bsdf_addhonors_name_hint"
+                        android:lines="1"
+                        android:maxLength="100"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="#BDBDBD"
+                        android:textCursorDrawable="@drawable/et_cursor" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_bsdf_addhonors_type"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_bsdf_addhonors_type" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bsdf_addhonors_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/sp_bsdf_addhonors_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignLeft="@+id/et_bsdf_addhonors_type"
+                            android:layout_alignTop="@+id/et_bsdf_addhonors_type"
+                            android:layout_alignRight="@+id/et_bsdf_addhonors_type"
+                            android:layout_alignBottom="@+id/et_bsdf_addhonors_type"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:spinnerMode="dropdown" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/et_bsdf_addhonors_type"
+                            style="@style/textRaleway_regular13spC4F5257"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/selector_et_default"
+                            android:cursorVisible="true"
+                            android:hint="@string/et_bsdf_addhonors_type_hint"
+                            android:lines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="30dp"
+                            android:singleLine="true"
+                            android:textColorHint="#BDBDBD" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_bsdf_addhonors_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/et_bsdf_addhonors_type"
+                            android:layout_alignBottom="@+id/et_bsdf_addhonors_type"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/vd_ic_arrow_dwon_black" />
+                    </RelativeLayout>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_bsdf_addhonors_rank"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_bsdf_addhonors_rank"
+                        android:visibility="gone"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cv_bsdf_addhonors_rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_et_default"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="#9EAEC5"
+                        app:strokeWidth="1dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/ll_bsdf_addhonors_rank"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-1dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_rank_first"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/tv_bsdf_addhonors_rank_first" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_rank_second"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/tv_bsdf_addhonors_rank_second"
+                                />
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_rank_third"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/tv_bsdf_addhonors_rank_third" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_rank_other"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/tv_bsdf_addhonors_rank_other" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </com.google.android.material.card.MaterialCardView>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_bsdf_addhonors_researchtype"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_bsdf_addhonors_researchtype"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_bsdf_addhonors_researchtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/sp_bsdf_addhonors_researchtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignLeft="@+id/et_bsdf_addhonors_researchtype"
+                            android:layout_alignTop="@+id/et_bsdf_addhonors_researchtype"
+                            android:layout_alignRight="@+id/et_bsdf_addhonors_researchtype"
+                            android:layout_alignBottom="@+id/et_bsdf_addhonors_researchtype"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:spinnerMode="dropdown" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/et_bsdf_addhonors_researchtype"
+                            style="@style/textRaleway_regular13spC4F5257"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/selector_et_default"
+                            android:cursorVisible="true"
+                            android:hint="@string/et_bsdf_addhonors_researchtype_hint"
+                            android:lines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="30dp"
+                            android:singleLine="true"
+                            android:textColorHint="#BDBDBD" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_bsdf_addhonors_researchtype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/et_bsdf_addhonors_researchtype"
+                            android:layout_alignBottom="@+id/et_bsdf_addhonors_researchtype"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/vd_ic_arrow_dwon_black" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_bsdf_addhonors_grade_level"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_bsdf_addhonors_grade_level" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cv_bsdf_addhonors_grade_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_et_default"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="#9EAEC5"
+                        app:strokeWidth="1dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/ll_bsdf_addhonors_grade_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-1dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_grade_level_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/grade_levle_9" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_grade_level_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/grade_levle_10"
+                                />
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_grade_level_11"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/grade_levle_11" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_grade_level_12"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/grade_levle_12" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_bsdf_addhonors_recognition"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_bsdf_addhonors_recognition" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cv_bsdf_addhonors_recognition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_et_default"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="#9EAEC5"
+                        app:strokeWidth="1dp"
+                        android:layout_gravity="center"
+                        >
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/ll_bsdf_addhonors_recognition"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="-1dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_recognition_school"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/tv_bsdf_addhonors_recognition_school" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_recognition_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/tv_bsdf_addhonors_recognition_state"
+                                />
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_recognition_national"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/tv_bsdf_addhonors_recognition_national" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#9EAEC5"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_bsdf_addhonors_recognition_international"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                style="@style/textRalewaybold10spC4F5257"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="@string/tv_bsdf_addhonors_recognition_international" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_bsdf_addhonors_add"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/vd_bg_btn_disabled"
+                        android:gravity="center"
+                        android:text="@string/btn_bsdf_addhonors_add"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

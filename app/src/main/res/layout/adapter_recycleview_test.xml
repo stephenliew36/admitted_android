@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="1dp"
+
+    tools:ignore="RtlSymmetry">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_adapter_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_adapteritem_interest"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_test_title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            style="@style/textRalewaybold13spC4F5257"
+            android:text="Sat"
+            android:lines="2"
+            app:layout_constraintBottom_toTopOf="@id/tv_adapter_test_score"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_adapter_recycleview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent=".062"
+            android:paddingLeft="10dp"
+            app:layout_constraintVertical_bias="1"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_test_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textPopin13spC4F5257"
+            android:text="1590/1600"
+            android:paddingLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_adapter_test_title"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_adapter_test_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textPopin13spC4F5257"
+            android:text="Taken ib Spetmber,2022"
+            android:paddingLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_adapter_test_score"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_adapter_recycleview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/vd_ic_close"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_adapter_test_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_adapter_test_title"
+            app:layout_constraintHorizontal_bias=".965"
+            >
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

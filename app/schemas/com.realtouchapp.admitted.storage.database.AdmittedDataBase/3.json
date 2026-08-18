@@ -1,0 +1,866 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "e2b250a3f15d6d63007b74762e7050ad",
+    "entities": [
+      {
+        "tableName": "Honors",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER, `grade` TEXT, `level` INTEGER, `point` INTEGER, `pointType` INTEGER, `rank` INTEGER, `researchType` INTEGER, `title` TEXT, `type` INTEGER, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "grade",
+            "columnName": "grade",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "level",
+            "columnName": "level",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point",
+            "columnName": "point",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pointType",
+            "columnName": "pointType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rank",
+            "columnName": "rank",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "researchType",
+            "columnName": "researchType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "StandardTest",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER, `apSubject` TEXT, `month` TEXT, `year` INTEGER, `genre` INTEGER, `point` INTEGER, `score` TEXT, `userId` INTEGER, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "testId",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "apSubject",
+            "columnName": "apSubject",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "month",
+            "columnName": "month",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "year",
+            "columnName": "year",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "genre",
+            "columnName": "genre",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point",
+            "columnName": "point",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Course",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER, `courseLevel` INTEGER, `courseName` TEXT, `courseTrack` INTEGER, `grade` TEXT, `gradeLevel` INTEGER, `gradingScale` INTEGER, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "academicId",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "courseLevel",
+            "columnName": "courseLevel",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "courseName",
+            "columnName": "courseName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "courseTrack",
+            "columnName": "courseTrack",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "grade",
+            "columnName": "grade",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "gradeLevel",
+            "columnName": "gradeLevel",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "gradingScale",
+            "columnName": "gradingScale",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "IntellectualCuriosity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER, `description` TEXT, `grade` TEXT, `hoursPerWeek` INTEGER, `name` TEXT, `point` INTEGER, `pointType` INTEGER, `role` INTEGER, `title` TEXT, `type` INTEGER, `weekPerYear` INTEGER, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "grade",
+            "columnName": "grade",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hoursPerWeek",
+            "columnName": "hoursPerWeek",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point",
+            "columnName": "point",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pointType",
+            "columnName": "pointType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "role",
+            "columnName": "role",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weekPerYear",
+            "columnName": "weekPerYear",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "CommunityImpact",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER, `description` TEXT, `grade` TEXT, `hoursPerWeek` INTEGER, `name` TEXT, `point` INTEGER, `pointType` INTEGER, `role` INTEGER, `title` TEXT, `type` INTEGER, `weekPerYear` INTEGER, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "grade",
+            "columnName": "grade",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hoursPerWeek",
+            "columnName": "hoursPerWeek",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point",
+            "columnName": "point",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pointType",
+            "columnName": "pointType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "role",
+            "columnName": "role",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weekPerYear",
+            "columnName": "weekPerYear",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "KeyValueData",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER, `key` TEXT, `keyType` TEXT, `value` TEXT, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "key",
+            "columnName": "key",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "keyType",
+            "columnName": "keyType",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "value",
+            "columnName": "value",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "targetschool",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER, `acceptanceRate` REAL, `actRequest` TEXT, `actionType` INTEGER, `applicantsInterestLevel` TEXT, `applicationEssay` TEXT, `city` TEXT, `classRank` TEXT, `classSizeBetween20And49` REAL, `classSizeFewerThan20` REAL, `classSizeMoreThan49` REAL, `commonApplicationAccepted` TEXT, `country` INTEGER, `deadlineForAcceptingAdmissionOffers` TEXT, `earlyActionApplicationDeadline` TEXT, `earlyDecisionI` TEXT, `earlyDecisionII` TEXT, `extracurricularActivities` TEXT, `female` REAL, `firstDayofSchool` TEXT, `gpaRequest` TEXT, `ieltsRequest` TEXT, `internationalStudents` TEXT, `isLiberalArtsSchools` INTEGER, `isArtSchools` INTEGER, `isPublic` INTEGER, `male` REAL, `photos` TEXT, `recommendations` TEXT, `recommendationsLetter` TEXT, `regularDecisionApplicationDeadline` TEXT, `restrictiveEarlyAction` TEXT, `satRequest` TEXT, `schoolName` TEXT, `score` INTEGER, `standardizedTestScores` TEXT, `studentFacultyRatio` TEXT, `toeflRequestInternet` TEXT, `toeflRequestPaper` TEXT, `totalEnrollment` INTEGER, `rank` INTEGER, `tuition` INTEGER, `undergraduateEnrollment` INTEGER, `volunteerWork` TEXT, `websiteAdmission` TEXT, `websiteSchool` TEXT, `workExperience` TEXT, `enable` INTEGER, `isSelected` INTEGER NOT NULL, `difficulty` TEXT NOT NULL, `scoreAlgorithm` TEXT NOT NULL, `applyingStatus` INTEGER NOT NULL, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "schoolId",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "acceptanceRate",
+            "columnName": "acceptanceRate",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "actRequest",
+            "columnName": "actRequest",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "actionType",
+            "columnName": "actionType",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "applicantsInterestLevel",
+            "columnName": "applicantsInterestLevel",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "applicationEssay",
+            "columnName": "applicationEssay",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "city",
+            "columnName": "city",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "classRank",
+            "columnName": "classRank",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "classSizeBetween20And49",
+            "columnName": "classSizeBetween20And49",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "classSizeFewerThan20",
+            "columnName": "classSizeFewerThan20",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "classSizeMoreThan49",
+            "columnName": "classSizeMoreThan49",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "commonApplicationAccepted",
+            "columnName": "commonApplicationAccepted",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "country",
+            "columnName": "country",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deadlineForAcceptingAdmissionOffers",
+            "columnName": "deadlineForAcceptingAdmissionOffers",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "earlyActionApplicationDeadline",
+            "columnName": "earlyActionApplicationDeadline",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "earlyDecisionI",
+            "columnName": "earlyDecisionI",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "earlyDecisionII",
+            "columnName": "earlyDecisionII",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "extracurricularActivities",
+            "columnName": "extracurricularActivities",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "female",
+            "columnName": "female",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstDayofSchool",
+            "columnName": "firstDayofSchool",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "gpaRequest",
+            "columnName": "gpaRequest",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ieltsRequest",
+            "columnName": "ieltsRequest",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "internationalStudents",
+            "columnName": "internationalStudents",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isLiberalArtsSchools",
+            "columnName": "isLiberalArtsSchools",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isArtSchools",
+            "columnName": "isArtSchools",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isPublic",
+            "columnName": "isPublic",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "male",
+            "columnName": "male",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "photos",
+            "columnName": "photos",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "recommendations",
+            "columnName": "recommendations",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "recommendationsLetter",
+            "columnName": "recommendationsLetter",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "regularDecisionApplicationDeadline",
+            "columnName": "regularDecisionApplicationDeadline",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "restrictiveEarlyAction",
+            "columnName": "restrictiveEarlyAction",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "satRequest",
+            "columnName": "satRequest",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "schoolName",
+            "columnName": "schoolName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "standardizedTestScores",
+            "columnName": "standardizedTestScores",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "studentFacultyRatio",
+            "columnName": "studentFacultyRatio",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "toeflRequestInternet",
+            "columnName": "toeflRequestInternet",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "toeflRequestPaper",
+            "columnName": "toeflRequestPaper",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "totalEnrollment",
+            "columnName": "totalEnrollment",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rank",
+            "columnName": "rank",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tuition",
+            "columnName": "tuition",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "undergraduateEnrollment",
+            "columnName": "undergraduateEnrollment",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "volunteerWork",
+            "columnName": "volunteerWork",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "websiteAdmission",
+            "columnName": "websiteAdmission",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "websiteSchool",
+            "columnName": "websiteSchool",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "workExperience",
+            "columnName": "workExperience",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "enable",
+            "columnName": "enable",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isSelected",
+            "columnName": "isSelected",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "difficulty",
+            "columnName": "difficulty",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scoreAlgorithm",
+            "columnName": "scoreAlgorithm",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "applyingStatus",
+            "columnName": "applyingStatus",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "FCMessage",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT, `content` TEXT, `createTimestamp` TEXT, `readTimestamp` TEXT, `actionType` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "notificatinoId",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "content",
+            "columnName": "content",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTimestamp",
+            "columnName": "createTimestamp",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "readTimestamp",
+            "columnName": "readTimestamp",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "actionType",
+            "columnName": "actionType",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Extracurricular",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`extracurricularId` INTEGER, `url` TEXT NOT NULL, `activityType` TEXT NOT NULL, `address` TEXT NOT NULL, `description` TEXT NOT NULL, `email` TEXT NOT NULL, `imageUrl` TEXT NOT NULL, `institutionType` TEXT NOT NULL, `lat` TEXT NOT NULL, `lng` TEXT NOT NULL, `name` TEXT NOT NULL, `phone` TEXT NOT NULL, `_id` TEXT NOT NULL, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "extracurricularId",
+            "columnName": "extracurricularId",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "activityType",
+            "columnName": "activityType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "address",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "imageUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "institutionType",
+            "columnName": "institutionType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lat",
+            "columnName": "lat",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lng",
+            "columnName": "lng",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "phone",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "placeId",
+            "columnName": "_id",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e2b250a3f15d6d63007b74762e7050ad')"
+    ]
+  }
+}

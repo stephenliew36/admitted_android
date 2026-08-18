@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".main.roadmmap.ui.fragment.CommunityImpactMainFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".915">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_icmainfragment_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icmainfragment_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vd_iv_go_back" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_icmainfragment_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="Back"
+                    android:textColor="#3F5D95" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:id="@+id/rl_icmainfragment_card"
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icmainfragment_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/bg_circle_d6dbe3"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vd_ic_intellectual_interests" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_icmainfragment_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/iv_icmainfragment_icon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_icmainfragment_title"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center"
+                        android:text="Intellectual Curiosity"
+                        android:textSize="17sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_icmainfragment_title_desp"
+                        style="@style/textRaleway_regular13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_icmainfragment_title"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:text="6 activities • 25 hours" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_icmainfragment_test"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="155dp"
+                        android:layout_height="8dp"
+                        android:layout_below="@+id/tv_icmainfragment_title_desp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="13dp"
+                        android:max="70"
+                        android:progress="33"
+                        android:progressDrawable="@drawable/bg_progress" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_icmainfragment_title_pb"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/pb_icmainfragment_test"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_toRightOf="@+id/pb_icmainfragment_test"
+                        android:gravity="center"
+                        android:text="15/70" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_icmainfragment_activities"
+                style="@style/textRalewaybold13spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Activities"
+                android:textSize="17sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_icmainfragment_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icmainfragment_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/vd_ic_empty_extracurriculars" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_icmainfragment_empty"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="You haven’t added any activities yet" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_icmainfragment_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_icmainfragment_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_btn_default"
+                    android:fontFamily="@font/raleway_bold"
+                    android:lineSpacingExtra="3sp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_icmainfragment_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/vd_ic_add_white"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="Add Activity"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_icmainfragment_resource"
+                style="@style/textRalewaybold13spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Extracurricular Resources Near You"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_icmainfragment_resource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_btn_default"
+                    android:fontFamily="@font/raleway_bold"
+                    android:lineSpacingExtra="3sp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_icmainfragment_resource_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/vd_ic_add_white"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="View All Resources"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,1822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".main.roadmmap.ui.fragment.CommunityImpactMainFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".915">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_applciationcollege_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_applciationcollege_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/vd_iv_go_back" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="@string/tv_testmainfragment_back"
+                    android:textColor="#3F5D95" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_name"
+                    style="@style/textRalewaybold13spC4F5257"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="University of California, Los Angeles"
+                    android:textSize="22sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_applystatus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    style="@style/textRaleway10spC4F5257"
+                    android:text="APPLYING"
+                    android:textColor="#7A8899"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:background="@drawable/bg_3f5d95_border"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_applystatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_adapteritem_interest"
+                    android:layout_weight="3"
+                    android:visibility="visible">
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/sp_applciationcollege_applystatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@null"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_applystatus"
+                        android:src="@drawable/bg_stroke_9eaec5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_applystatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/vd_ic_arrow_down_black"
+                        android:fontFamily="@font/raleway_bold"
+                        android:gravity="center"
+                        android:text="Appling"
+                        android:textAllCaps="false"
+                        android:textColor="#3F5D95"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_chances_value"
+
+                    style="@style/textPopinBold22spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="35sp"
+                    android:text="85%"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_applciationcollege_chances"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_applciationcollege_difficulty"
+                    app:layout_constraintRight_toRightOf="@+id/tv_applciationcollege_difficulty"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_chances"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your readiness"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_applciationcollege_difficulty"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_applciationcollege_difficulty"
+                    app:layout_constraintRight_toRightOf="@+id/tv_applciationcollege_difficulty"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1"
+                    android:layout_marginBottom="15dp"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TARGET"
+                    style="@style/textRalewaybold13spC4F5257"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_targetschool_type"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_applciationcollege_profile"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias=".1"
+                    app:layout_constraintVertical_bias="1"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_applciationcollege_exclamation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@+id/tv_applciationcollege_difficulty"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_applciationcollege_difficulty"
+                    app:layout_constraintLeft_toRightOf="@+id/tv_applciationcollege_difficulty"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/vd_ic_exclamation"
+                    android:contentDescription="@null"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_city"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_applciationcollege_info"
+                    android:layout_alignLeft="@+id/btn_applciationcollege_profile"
+                    android:layout_alignParentTop="true"
+                    android:text="Los Angeles, USA"
+                    android:textColor="#4F5257"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_applciationcollege_info"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/btn_applciationcollege_profile"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_info"
+                    style="@style/textRaleway_regular13spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btn_applciationcollege_profile"
+                    android:layout_alignLeft="@+id/btn_applciationcollege_profile"
+                    android:text="Private • $80k"
+                    android:textColor="#4F5257"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_applciationcollege_profile"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/btn_applciationcollege_profile"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_applciationcollege_city"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_applciationcollege_profile"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_adapteritem_interest"
+                    android:text="School Profile"
+                    android:textColor="#3F5D95"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_applciationcollege_info"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintVertical_bias="0"
+
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_applciationcollege_dates"
+                style="@style/textRalewaybold13spC4F5257"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Important Dates"
+                android:textSize="17sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_applciationcollege_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                tools:itemCount="1"
+                tools:listitem="@layout/adapter_application_date"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_applciationcollege_common_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_adapteritem_interest"
+                android:layout_marginTop="15dp"
+                android:visibility="visible"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_common_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/vd_ic_external_link"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="Go To Common App"
+                    android:textAllCaps="false"
+                    android:textColor="#3F5D95"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_applciationcollege_university"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_adapteritem_interest"
+                android:layout_marginTop="15dp"
+                android:visibility="visible"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_university"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/vd_ic_external_link"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="Go To University"
+                    android:textAllCaps="false"
+                    android:textColor="#3F5D95"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_academic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_academic_title"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Academic Performance - Excellent"
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_academic"
+                        android:textColor="#4F5257"
+                        android:textSize="17sp"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_academic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_academic_content"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Your Academic Performance is excellent among the past applicants for this school."
+                    android:textColor="#4F5257"
+                    android:layout_marginTop="15dp"
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_academic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_academic_level"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="4.4 GPA - Excellent"
+                        android:textColor="#4F5257"
+                        android:textSize="13sp"
+                        android:layout_marginTop="15dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_academic_advice"
+                        style="@style/textRalewaybold10spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="OUR ADVICE"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_targetschool_type"
+                        android:textColor="#4F5257"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_academic_subcontent"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="10dp"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_intellectual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_intellectual_title"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Academic Performance - Excellent"
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_intellectual"
+                        android:textColor="#4F5257"
+                        android:textSize="17sp"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_intellectual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_intellectual_content"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Your Academic Performance is excellent among the past applicants for this school."
+                    android:textColor="#4F5257"
+                    android:layout_marginTop="15dp"
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_intellectual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_intellectual_advice"
+                        style="@style/textRalewaybold10spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="OUR ADVICE"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_targetschool_type"
+                        android:textColor="#4F5257"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_intellectual_subcontent"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="10dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_intellectual_explore"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_intellectual_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="Explore Extracurriculars"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_community_title"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Academic Performance - Excellent"
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_community"
+                        android:textColor="#4F5257"
+                        android:textSize="17sp"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_community"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_community_content"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Your Academic Performance is excellent among the past applicants for this school."
+                    android:textColor="#4F5257"
+                    android:layout_marginTop="15dp"
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_community"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_community_advice"
+                        style="@style/textRalewaybold10spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="OUR ADVICE"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_targetschool_type"
+                        android:textColor="#4F5257"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_community_subcontent"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="10dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_community_explore"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_community_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="Explore Extracurriculars"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_honors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_honors_title"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Academic Performance - Excellent"
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_honors"
+                        android:textColor="#4F5257"
+                        android:textSize="17sp"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_honors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_honors_content"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Your Academic Performance is excellent among the past applicants for this school."
+                    android:textColor="#4F5257"
+                    android:layout_marginTop="15dp"
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_honors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_honors_advice"
+                        style="@style/textRalewaybold10spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="OUR ADVICE"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_targetschool_type"
+                        android:textColor="#4F5257"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_honors_subcontent"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="10dp"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_standardized"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_standardized"
+                        android:id="@+id/tv_applciationcollege_standardized_title"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Academic Performance - Excellent"
+                        android:textColor="#4F5257"
+                        android:textSize="17sp"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_standardized"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_applciationcollege_standardized_content"
+                    style="@style/textRaleway15spC4F5257"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Your Academic Performance is excellent among the past applicants for this school."
+                    android:textColor="#4F5257"
+                    android:layout_marginTop="15dp"
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_standardized"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_standardized_sat"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_standardized_sat_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_standardized_act"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_standardized_act_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/ll_applciationcollege_standardized_ap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_standardized_toefl"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_standardized_toefl_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_standardized_ielts"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_standardized_ielts_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="You are extraordinary! Keep up the good work."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll_applciationcollege_essay_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_essay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_essay_title"
+                        style="@style/textRalewaybold13spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Essay Prompts"
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_essay"
+                        android:textColor="#4F5257"
+                        android:textSize="17sp"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_essay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_essay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_essayguides"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_essayguides"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="View Essay Guides"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_applciationcollege_essayguides"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_recommendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_recommendation_title"
+                        style="@style/textRalewaybold17spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Recommendation Letters"
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_recommendation"
+                        android:textColor="#4F5257"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_recommendation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_recommendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_recommendation_tutor"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="If a tutor or mentor is writing the letter..."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_recommendation_tutor_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Kindly ask him / her to focus on the following points when writing it.\n \t．Distinctive qualities\n\t．Academic history &amp; interests\n\t．Activities &amp; areas of impact\n\t．Summary - what you have to offer"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_recommendationguides"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_recommendationguides"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="View Detailed Writing Guide for a Mentor"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_recommendation_subject"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="If a subject teacher is writing the letter..."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_recommendation_subject_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Kindly ask him / her to focus on the following points when writing it.
+\n\t．Your interest in the subject
+\n\t．Did you demonstrate intellectual curiosity \n\t\t\tthroughout the course?
+\n\t．Were you able to kick off class discussions?
+\n\t．How have you contributed to the class?
+\n\t．How many students are in the class? How\n\t\t\tdo you work and collaborate \n\t\t\twith fellow students?"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_recommendationguides_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_recommendationguides_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="View Detailed Writing Guide for a Teacher"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_prearrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_prearrival_title"
+                        style="@style/textRalewaybold17spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Pre-Arrival Checklist"
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_prearrival"
+                        android:textColor="#4F5257"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_prearrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_prearrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_prearrival_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Here are a few things you need to check before your first day of school."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_prearrival_vaccination"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Vaccination &amp; Health Records"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_prearrival_vaccination_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="In the United States, every university requires all students to provide vaccination records before enrollment. Depending on the regulations of each state, the vaccination dates should be filled out on the form provided by the school. Some schools may require the form to be signed by a physician, and to be uploaded to the school’s system along with the required vaccination record."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_prearrivalguides_vaccination"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_prearrivalguides_vaccination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Vaccination &amp; Health Records"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_prearrival_newstudent"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="New Student Orientation"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_prearrival_newstudent_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/tv_applciationcollege_prearrival_newstudent_content"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_prearrivalguides_newstudent"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_prearrivalguides_newstudent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Orientation"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_prearrival_housing"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Housing"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_prearrival_housing_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/tv_applciationcollege_prearrival_housing_content"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_prearrivalguides_housing"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_prearrivalguides_housing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Housing"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_prearrival_course"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Course Selection"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_prearrival_course_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="As a first year student at the university, it is important to keep an eye out for general education courses and required courses for your selected major. Certain courses require a placement test, which can be waived with AP exams. International students must take at least 12 credits per semester to maintain a valid student visa. Remember to ask for suggestions on course selection from your school’s academic advisor, senior students and external sources, such as Rate My Professor, "
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_prearrivalguides_course"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_prearrivalguides_course"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Course Selection"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_prearrival_tuitionfees"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Tuition Fees"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_prearrival_tuitionfees_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="You may check your tuition fee by logging into your university portal, which may vary depending on your chosen program. The minimum payment and due date will be indicated on the tuition bill. You will be paying one semester or one academic year at a time."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_prearrivalguides_tuitionfees"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_prearrivalguides_tuitionfees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Tuition Fees"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_frame_f2f4f6"
+                android:padding="15dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_applciationcollege_international"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_title"
+                        style="@style/textRalewaybold17spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="International Student Checklist"
+                        android:layout_toLeftOf="@+id/iv_applciationcollege_international"
+                        android:textColor="#4F5257"
+                        />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_applciationcollege_international"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vd_ic_arrow_down_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_applciationcollege_international"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Here are a few things you need to check before your first day of school as an international student."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_studentvisa"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Student Visa"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_studentvisa_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/tv_applciationcollege_international_studentvisa_content"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_studentvisa"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_studentvisa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Student Visa"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_medicalexamination"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Medical Examination"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_medicalexamination_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="When applying for a Canadian visa, you will need to make an appointment with a hospital to complete a medical examination. After the examination, you will receive a confirmation slip, (not the results). The hospital will upload a medical report directly to the visa center. Remember to take a photo of the confirmation slip for your record."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_medicalexamination"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_medicalexamination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Medical Examination"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_boardingcustomscheck"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Boarding &amp; Customs check"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_boardingcustomscheck_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="72 hours before boarding — After downloading ArriveCan App and filling out the E-Gate/Custom Declaration forms, you will receive a confirmation email indicating a set of Reference Number/QR Code. Please save the QR Code in your phone as you will need it for scanning when going through customs."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_boardingcustomscheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_boardingcustomscheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Boarding &amp; Customs check"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_entering"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Entering the U.S. on a student visa"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_entering_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="Students with a student visa could enter the U.S. within 30 days before the school start date listed on the I-20. While you may want to visit the U.S. in the summer and head to the school right after, holders of student visas can only enter the U.S. as tourists in June. If doing so, they must leave the U.S. before the start of the academic year and re-enter the country with a valid student visa."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_entering"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_entering"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Entering the U.S. on a student visa"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_tuition"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Tuition &amp; Fees"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_tuition_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/tv_applciationcollege_international_tuition_content"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_tuition"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_tuition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Tuition &amp; Fees"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_studypermit"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Study Permit"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_studypermit_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="When entering Canada for the first time, be sure to bring your passport, eTA, and the approval letter for study permit. Additionally, have your acceptance letter and tuition fee receipt at hand. Bring these documents with you in your carry-on."
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_studypermit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        >
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_studypermit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Study Permit"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_vaccinationstbtestandnhs"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Vaccinations, TB Test, and NHS"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        android:visibility="gone"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_vaccinationstbtestandnhs_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="Students who apply for a visa from certain countries are required to complete a TB Test (https://www.gov.uk/tb-test-visa/countries-where-you-need-a-tb-test-to-enter-the-uk).
+
+The U.K. provides international students with free COVID-19 vaccines. You could make reservations and check the latest regulations on the NHS website: https://www.nhs.uk/conditions/covid-19/covid-19-vaccination/about-covid-19-vaccination"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_vaccinationstbtestandnhs"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        >
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_vaccinationstbtestandnhs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Vaccinations, TB Test, and NHS"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_bankacoount"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Bank Account"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_bankacoount_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/tv_applciationcollege_international_bankacoount_content"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_bankacoount"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_bankacoount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Bank Account"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_mobile"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Mobile Plan"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_mobile_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/tv_applciationcollege_international_mobile_content"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Mobile Plan"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_applciationcollege_international_academicalendar"
+                        style="@style/textRalewaybold15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Academic Calendar"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        app:buttonTint="#3F5D95"
+                        />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_applciationcollege_international_academicalendar_content"
+                        style="@style/textRaleway15spC4F5257"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6sp"
+                        android:text="@string/tv_applciationcollege_international_academicalendar_content"
+                        android:textColor="#4F5257"
+                        android:layout_marginTop="15dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_applciationcollege_internationalguides_academicalendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_adapteritem_interest"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_applciationcollege_internationalguides_academicalendar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_bold"
+                            android:gravity="center"
+                            android:text="More on Academic Calendar"
+                            android:textAllCaps="false"
+                            android:textColor="#3F5D95"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_explore"
+    app:startDestination="@+id/navigation_explore_main"
+    tools:ignore="MissingDefaultResource">
+
+    <fragment
+        android:id="@+id/navigation_explore_main"
+        android:name="com.realtouchapp.admitted.main.explore.ui.fragment.ExploreMainFragment"
+        android:label="@string/tab_2_"
+        tools:layout="@layout/fragment_exploremain">
+        <action
+            android:id="@+id/action_navigation_explore_main_to_navigation_collegedetail"
+            app:destination="@id/navigation_collegedetail"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"/>
+        <action
+            android:id="@+id/action_navigation_explore_main_to_navigation_appmain"
+            app:destination="@id/navigation_appmain"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"/>
+        <action
+            android:id="@+id/action_navigation_explore_main_to_navigation_exploredetail"
+            app:destination="@id/navigation_exploredetail"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"/>
+        <action
+            android:id="@+id/action_navigation_explore_main_to_navigation_exploregetall"
+            app:destination="@id/navigation_exploregetall"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_exploredetail"
+        android:name="com.realtouchapp.admitted.main.explore.ui.fragment.ExploreDetailFragment"
+        tools:layout="@layout/fragment_exploredetail"
+        ></fragment>
+
+    <fragment
+        android:id="@+id/navigation_exploregetall"
+        android:name="com.realtouchapp.admitted.main.explore.ui.fragment.ExploreGetAllFragment"
+        tools:layout="@layout/fragment_exploredetail"
+        >
+        <action
+            android:id="@+id/action_navigation_exploregetall_to_navigation_exploredetail"
+            app:destination="@id/navigation_exploredetail"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_collegedetail"
+        android:name="com.realtouchapp.admitted.main.explore.ui.fragment.CollegeDetailFragment"
+        tools:layout="@layout/fragment_college_detail" >
+        <action
+            android:id="@+id/action_navigation_collegedetail_to_navigation_applicationcollegedetail"
+            app:destination="@id/navigation_applicationcollegedetail"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popExitAnim="@anim/right_out"
+            app:popEnterAnim="@anim/left_in"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_applicationcollegedetail"
+        android:name="com.realtouchapp.admitted.main.application.ui.fragment.ApplicationsCollegeFragment"
+        tools:layout="@layout/fragment_applicationcollege" >
+
+        <action
+            android:id="@+id/action_navigation_applicationcollegedetail_to_navigation_webviewfragment"
+            app:destination="@id/navigation_webviewfragment"
+
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popExitAnim="@anim/right_out"
+            app:popEnterAnim="@anim/left_in"/>
+
+        <action
+            android:id="@+id/action_navigation_applicationcollegedetail_to_navigation_collegedetail"
+            app:destination="@id/navigation_collegedetail"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_webviewfragment"
+        android:name="com.realtouchapp.admitted.common.ui.fragment.WebViewFragment"
+        tools:layout="@layout/fragment_webview" />
+
+    <fragment
+        android:id="@+id/navigation_appmain"
+        android:name="com.realtouchapp.admitted.main.application.ui.fragment.ApplicationMainFragment"
+        tools:layout="@layout/fragment_applicationmain" />
+
+</navigation>

@@ -1,0 +1,16 @@
+# 忽略最外層與任何子目錄下的記憶體快照
+*.hprof
+
+# Gradle 與 Android 編譯暫存
+.gradle/
+build/
+captures/
+
+# 系統與個人設定
+local.properties
+.idea/
+*.iml
+.DS_Store
+
+# OAuth / third-party secrets (keep a local copy; see configue.example.xml)
+app/src/main/res/values/configue.xml
